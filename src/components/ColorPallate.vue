@@ -1,11 +1,15 @@
 <template>
 <div>
-<div class="refdiv">
+<!-- <div class="refdiv">
   <input class="refinput" />
     <button class="refbutton" @click="clicked">
       <strong>_</strong>
     </button>
-    </div>
+    </div> -->
+    <div class="buttonIn">
+        <input type="text" id="enter" />
+        <button id="clear" @click="clicked"><strong>_</strong></button>
+      </div>
 <!-- <button ></button> -->
   <div class="tabs" v-if="clickedPallete">
     <div class="tab">
