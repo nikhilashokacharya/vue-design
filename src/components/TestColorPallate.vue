@@ -1,86 +1,79 @@
 <template>
 <div>
-<!-- <div class="refdiv">
-  <input class="refinput" />
-    <button class="refbutton" @click="clicked">
-      <strong>_</strong>
-    </button>
-    </div> -->
     <div class="buttonIn">
         <input type="text" id="enter"/>
         <button id="clear" @click="clicked"><strong>_</strong></button>
       </div>
-<!-- <button ></button> -->
-  <div class="tabs" style="margin: 0px 0px" v-if="clickedPallete">
+  <div class="tabs" v-if="clickedPallete">
     <div class="tab">
       <input class="tabinput" type="radio" id="tab-1" name="tab-group-1" checked />
       <label for="tab-1">Palette</label>
       <div class="content">
         <div class="grid-container">
-          <div class="grid-item1" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item2" @click="selectColor('rgb(255, 188, 188)')" style="backgroundColor: rgb(255, 188, 188);"></div>
-          <div class="grid-item3" @click="selectColor('rgb(255, 227, 174)')" style="backgroundColor: rgb(255, 227, 174);"></div>
-          <div class="grid-item4" @click="selectColor('rgb(255, 255, 168)')" style="backgroundColor:rgb(255, 255, 168);"></div>
-          <div class="grid-item5" @click="selectColor('rgb(181, 255, 181)')" style="backgroundColor:rgb(181, 255, 181);"></div>
-          <div class="grid-item6" @click="selectColor('rgb(202, 242, 255)')" style="backgroundColor:rgb(202, 242, 255);"></div>
-          <div class="grid-item7" @click="selectColor('rgb(184, 184, 255)')" style="backgroundColor:rgb(184, 184, 255);"></div>
-          <div class="grid-item8" @click="selectColor('rgb(255, 200, 255)')" style="backgroundColor:rgb(255, 200, 255);"></div>
-          <div class="grid-item9" @click="selectColor('rgb(211, 211, 211)')" style="backgroundColor:rgb(211, 211, 211);"></div>
-          <div class="grid-item10" @click="selectColor('rgb(253, 165, 165)')" style="backgroundColor:rgb(253, 165, 165);"></div>
-          <div class="grid-item11" @click="selectColor('rgb(255, 213, 134)')" style="backgroundColor:rgb(255, 213, 134);"></div>
-          <div class="grid-item12" @click="selectColor('rgb(255, 255, 138)')" style="backgroundColor:rgb(255, 255, 138);"></div>
-          <div class="grid-item13" @click="selectColor('rgb(134, 255, 134)')" style="backgroundColor:rgb(134, 255, 134);"></div>
-          <div class="grid-item14" @click="selectColor('rgb(132, 224, 255)')" style="backgroundColor:rgb(132, 224, 255);"></div>
-          <div class="grid-item15" @click="selectColor('rgb(133, 133, 255)')" style="backgroundColor:rgb(133, 133, 255);"></div>
-          <div class="grid-item16" @click="selectColor('rgb(255, 130, 255)')" style="backgroundColor:rgb(255, 130, 255);"></div>
-          <div class="grid-item17" @click="selectColor('rgb(175, 174, 174)')" style="backgroundColor:rgb(175, 174, 174);"></div>
-          <div class="grid-item18" @click="selectColor('rgb(255, 116, 116)')" style="backgroundColor:rgb(255, 116, 116);"></div>
-          <div class="grid-item19" @click="selectColor('rgb(255, 197, 89)')" style="backgroundColor:rgb(255, 197, 89);"></div>
-          <div class="grid-item20" @click="selectColor('rgb(255, 255, 109)')" style="backgroundColor:rgb(255, 255, 109);"></div>
-          <div class="grid-item21" @click="selectColor('rgb(77, 255, 77)')" style="backgroundColor:rgb(77, 255, 77);"></div>
-          <div class="grid-item22" @click="selectColor('rgb(67, 208, 255)')" style="backgroundColor:rgb(67, 208, 255);"></div>
-          <div class="grid-item23" @click="selectColor('rgb(102, 102, 255)')" style="backgroundColor:rgb(102, 102, 255);"></div>
-          <div class="grid-item24" @click="selectColor('rgb(255, 71, 255)')" style="backgroundColor:rgb(255, 71, 255);"></div>
-          <div class="grid-item25" @click="selectColor('rgb(129, 128, 128)')" style="backgroundColor:rgb(129, 128, 128);"></div>
-          <div class="grid-item26" @click="selectColor('rgb(255, 74, 74)')" style="backgroundColor:rgb(255, 74, 74);"></div>
-          <div class="grid-item27" @click="selectColor('rgb(255, 186, 58)')" style="backgroundColor:rgb(255, 186, 58);"></div>
-          <div class="grid-item28" @click="selectColor('rgb(255, 255, 72)')" style="backgroundColor:rgb(255, 255, 72);"></div>
-          <div class="grid-item29" @click="selectColor('rgb(0, 255, 0)')" style="backgroundColor:rgb(0, 255, 0);"></div>
-          <div class="grid-item30" @click="selectColor('rgb(0, 191, 255)')" style="backgroundColor:rgb(0, 191, 255);"></div>
-          <div class="grid-item31" @click="selectColor('rgb(58, 58, 255)')" style="backgroundColor:rgb(58, 58, 255);"></div>
-          <div class="grid-item32" @click="selectColor('rgb(255, 7, 255)')" style="backgroundColor:rgb(255, 7, 255);"></div>
-          <div class="grid-item33" @click="selectColor('rgb(65, 64, 64)')" style="backgroundColor:rgb(65, 64, 64);"></div>
-          <div class="grid-item34" @click="selectColor('rgb(255, 41, 41)')" style="backgroundColor:rgb(255, 41, 41);"></div>
-          <div class="grid-item35" @click="selectColor('rgb(255, 176, 29)')" style="backgroundColor:rgb(255, 176, 29);"></div>
-          <div class="grid-item36" @click="selectColor('rgb(255, 255, 35)')" style="backgroundColor:rgb(255, 255, 35);"></div>
-          <div class="grid-item37" @click="selectColor('rgb(58, 204, 58)')" style="backgroundColor:rgb(58, 204, 58);"></div>
-          <div class="grid-item38" @click="selectColor('rgb(75, 147, 172)')" style="backgroundColor:rgb(75, 147, 172);"></div>
-          <div class="grid-item39" @click="selectColor('rgb(48, 48, 202)')" style="backgroundColor:rgb(48, 48, 202);"></div>
-          <div class="grid-item40" @click="selectColor('rgb(175, 62, 175)')" style="backgroundColor:rgb(175, 62, 175);"></div>
-          <div class="grid-item41" @click="selectColor('rgb(26, 25, 25)')" style="backgroundColor:rgb(26, 25, 25);"></div>
-          <div class="grid-item42" @click="selectColor('rgb(255, 0, 0);')" style="backgroundColor:rgb(255, 0, 0);"></div>
-          <div class="grid-item43" @click="selectColor('rgb(255, 166, 0)')" style="backgroundColor:rgb(255, 166, 0);"></div>
-          <div class="grid-item44" @click="selectColor('rgb(255, 255, 0)')" style="backgroundColor:rgb(255, 255, 0);"></div>
-          <div class="grid-item45" @click="selectColor('rgb(43, 161, 43)')" style="backgroundColor:rgb(43, 161, 43);"></div>
-          <div class="grid-item46" @click="selectColor('rgb(10, 94, 122)')" style="backgroundColor:rgb(10, 94, 122);"></div>
-          <div class="grid-item47" @click="selectColor('rgb(31, 31, 109)')" style="backgroundColor:rgb(31, 31, 109);"></div>
-          <div class="grid-item48" @click="selectColor('rgb(112, 41, 112);')" style="backgroundColor:rgb(112, 41, 112);"></div>
-          <div class="grid-item49" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item50" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item51" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item52" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item53" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item54" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item55" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item56" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item57" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item58" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item59" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item60" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item61" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item62" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item63" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
-          <div class="grid-item64" @click="selectColor('rgb(255, 255, 255)')" style="backgroundColor:rgb(255, 255, 255);"></div>
+          <div class="grid-item1" @click="selectColor" ></div>
+          <div class="grid-item2"></div>
+          <div class="grid-item3"></div>
+          <div class="grid-item4"></div>
+          <div class="grid-item5"></div>
+          <div class="grid-item6"></div>
+          <div class="grid-item7"></div>
+          <div class="grid-item8"></div>
+          <div class="grid-item9"></div>
+          <div class="grid-item10"></div>
+          <div class="grid-item11"></div>
+          <div class="grid-item12"></div>
+          <div class="grid-item13"></div>
+          <div class="grid-item14"></div>
+          <div class="grid-item15"></div>
+          <div class="grid-item16"></div>
+          <div class="grid-item17"></div>
+          <div class="grid-item18"></div>
+          <div class="grid-item19"></div>
+          <div class="grid-item20"></div>
+          <div class="grid-item21"></div>
+          <div class="grid-item22"></div>
+          <div class="grid-item23"></div>
+          <div class="grid-item24"></div>
+          <div class="grid-item25"></div>
+          <div class="grid-item26"></div>
+          <div class="grid-item27"></div>
+          <div class="grid-item28"></div>
+          <div class="grid-item29"></div>
+          <div class="grid-item30"></div>
+          <div class="grid-item31"></div>
+          <div class="grid-item32"></div>
+          <div class="grid-item33"></div>
+          <div class="grid-item34"></div>
+          <div class="grid-item35"></div>
+          <div class="grid-item36"></div>
+          <div class="grid-item37"></div>
+          <div class="grid-item38"></div>
+          <div class="grid-item39"></div>
+          <div class="grid-item40"></div>
+          <div class="grid-item41"></div>
+          <div class="grid-item42"></div>
+          <div class="grid-item43"></div>
+          <div class="grid-item44"></div>
+          <div class="grid-item45"></div>
+          <div class="grid-item46"></div>
+          <div class="grid-item47"></div>
+          <div class="grid-item48"></div>
+          <div class="grid-item49"></div>
+          <div class="grid-item50"></div>
+          <div class="grid-item51"></div>
+          <div class="grid-item52"></div>
+          <div class="grid-item53"></div>
+          <div class="grid-item54"></div>
+          <div class="grid-item55"></div>
+          <div class="grid-item56"></div>
+          <div class="grid-item57"></div>
+          <div class="grid-item58"></div>
+          <div class="grid-item59"></div>
+          <div class="grid-item60"></div>
+          <div class="grid-item61"></div>
+          <div class="grid-item62"></div>
+          <div class="grid-item63"></div>
+          <div class="grid-item64"></div>
         </div>
       </div>
     </div>
@@ -186,8 +179,8 @@ export default {
     clicked(){
       this.clickedPallete=!this.clickedPallete;
     },
-    selectColor(data){
-      console.log('Color:',data);
+    selectColor(){
+      console.log('');
       
     }
   }
@@ -262,7 +255,7 @@ export default {
   /* position: fixed; */
 }
 .grid-item1 {
-  /* background-color: rgb(255, 255, 255); */
+  /* background-color: white; */
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -280,7 +273,7 @@ export default {
   height: 14px;
 }
 .grid-item4 {
-  /* background-color: rgb(255, 255, 168); */
+  background-color: rgb(255, 255, 168);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -878,4 +871,6 @@ export default {
   margin: 1px;
   display: inline-block;
 }
+
+
 </style>

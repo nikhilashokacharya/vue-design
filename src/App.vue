@@ -2,9 +2,11 @@
   <div id="app">
     <Modal />
     <hr>
+    <TabOrderModal />
+    <hr>
     <ColorPallate />
-    <hr />
-    
+    <!-- <hr />
+    <TestModal /> -->
     <!-- <Label />
     <hr />
     <textBox />TextBox
@@ -68,6 +70,10 @@ import TestComboBox from "./components/TestComboBox.vue";
 import TestScroll1 from "./components/TestScroll1.vue";
 import ColorPallate from "./components/ColorPallate.vue";
 import Modal from "./components/Modal.vue";
+import TestModal from './components/TestModal.vue';
+import TabOrderModal from './components/TabOrderModal.vue';
+
+
 
 @Component({
   components: {
@@ -91,7 +97,9 @@ import Modal from "./components/Modal.vue";
     TestComboBox,
     TestScroll1,
     ColorPallate,
-    Modal
+    Modal,
+    TestModal,
+    TabOrderModal
   }
 })
 export default class App extends Vue {}
