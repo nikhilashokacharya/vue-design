@@ -18,7 +18,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .tabs {
   position: relative;
   min-height: 150px;

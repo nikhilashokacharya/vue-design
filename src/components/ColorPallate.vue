@@ -90,80 +90,80 @@
 
       <div class="content">
         <div class="gridcontainer">
-          <div>
-            <span class="griditem1"></span>Scroll Bars
+          <div @click="selectColor('rgb(161, 161, 161)')">
+            <span class="griditem1"  style="backgroundColor:rgb(161, 161, 161);"></span>Scroll Bars
           </div>
-          <div>
-            <span class="griditem2"></span>Desktop
+          <div @click="selectColor('rgb(0, 0, 0)')">
+            <span class="griditem2"  style="backgroundColor:rgb(0, 0, 0);"></span>Desktop
           </div>
-          <div>
-            <span class="griditem3"></span>Active Title Bar
+          <div @click="selectColor('rgba(126, 179, 204, 0.8)')">
+            <span class="griditem3"  style="backgroundColor:rgba(126, 179, 204, 0.8);"></span>Active Title Bar
           </div>
-          <div>
-            <span class="griditem4"></span>Inactive Title Bar
+          <div @click="selectColor('rgba(155, 201, 223, 0.8)')">
+            <span class="griditem4"  style="backgroundColor:rgba(155, 201, 223, 0.8);"></span>Inactive Title Bar
           </div>
-          <div>
-            <span class="griditem5"></span>Menu Bar
+          <div @click="selectColor('rgba(236, 234, 234, 0.8)')">
+            <span class="griditem5" style="backgroundColor:rgba(236, 234, 234, 0.8);"></span>Menu Bar
           </div>
-          <div>
-            <span class="griditem6"></span>Window Background
+          <div @click="selectColor('rgba(255, 255, 255, 0.8)')">
+            <span class="griditem6"  style="backgroundColor:rgba(255, 255, 255, 0.8);"></span>Window Background
           </div>
-          <div>
-            <span class="griditem7"></span>Window Frame
+          <div @click="selectColor('rgba(128, 127, 127, 0.8)')">
+            <span class="griditem7"  style="backgroundColor:rgba(128, 127, 127, 0.8);"></span>Window Frame
           </div>
-          <div>
-            <span class="griditem8"></span>Menu Text
+          <div @click="selectColor('rgb(0, 0, 0)')">
+            <span class="griditem8"  style="backgroundColor:rgb(0, 0, 0);"></span>Menu Text
           </div>
-          <div>
-            <span class="griditem9"></span>Window Text
+          <div @click="selectColor('rgb(0, 0, 0)')">
+            <span class="griditem9"  style="backgroundColor:rgb(0, 0, 0);"></span>Window Text
           </div>
-          <div>
-            <span class="griditem10"></span>Active Title Bar Text
+          <div @click="selectColor('rgb(0, 0, 0)')">
+            <span class="griditem10"  style="rgb(0, 0, 0);"></span>Active Title Bar Text
           </div>
-          <div>
-            <span class="griditem11"></span>Active Border
+          <div @click="selectColor('rgba(173, 172, 172, 0.8)')">
+            <span class="griditem11"  style="backgroundColor:rgba(173, 172, 172, 0.8);"></span>Active Border
           </div>
-          <div>
-            <span class="griditem12"></span>Inactive Border
+          <div @click="selectColor('rgba(255, 255, 255, 0.8)')">
+            <span class="griditem12"  style="backgroundColor:rgba(255, 255, 255, 0.8);"></span>Inactive Border
           </div>
-          <div>
-            <span class="griditem13"></span>Application Workspace
+          <div @click="selectColor('rgba(161, 160, 160, 0.8)')">
+            <span class="griditem13"  style="backgroundColor:rgba(161, 160, 160, 0.8);"></span>Application Workspace
           </div>
-          <div>
-            <span class="griditem14"></span>Highlight
+          <div @click="selectColor('rgba(50, 139, 255, 0.8)')">
+            <span class="griditem14"  style="backgroundColor:rgba(50, 139, 255, 0.8);"></span>Highlight
           </div>
-          <div>
-            <span class="griditem15"></span>Highlight Text
+          <div @click="selectColor('rgba(255, 255, 255, 0.8)')">
+            <span class="griditem15"  style="backgroundColor:rgba(255, 255, 255, 0.8);"></span>Highlight Text
           </div>
-          <div>
-            <span class="griditem16"></span>Button Face
+          <div @click="selectColor('rgba(235, 235, 235, 0.8)')">
+            <span class="griditem16"  style="backgroundColor:rgba(235, 235, 235, 0.8);"></span>Button Face
           </div>
-          <div>
-            <span class="griditem17"></span>Button Shadow
+          <div @click="selectColor('rgba(185, 185, 185, 0.8)')" >
+            <span class="griditem17" style="backgroundColor:rgba(185, 185, 185, 0.8);"></span>Button Shadow
           </div>
-          <div>
-            <span class="griditem18"></span>Disabled Text
+          <div @click="selectColor('rgba(124, 124, 124, 0.8)')">
+            <span class="griditem18"  style="backgroundColor:rgba(124, 124, 124, 0.8);"></span>Disabled Text
           </div>
-          <div>
-            <span class="griditem19"></span>Button Text
+          <div @click="selectColor('rgb(0, 0, 0);')">
+            <span class="griditem19"  style="backgroundColor:rgb(0, 0, 0);"></span>Button Text
           </div>
-          <div>
-            <span class="griditem20"></span>Active Title Bar Text
+          <div @click="selectColor('rgb(0, 0, 0)')">
+            <span class="griditem20"  style="backgroundColor:rgb(0, 0, 0);"></span>Active Title Bar Text
           </div>
-          <div>
-            <span class="griditem21"></span>Button Highlight
+          <div @click="selectColor('rgba(255, 255, 255, 0.8)')">
+            <span class="griditem21"  style="backgroundColor:rgba(255, 255, 255, 0.8);"></span>Button Highlight
           </div>
-          <div>
-            <span class="griditem22"></span>Button Dark Shadow
+          <div @click="selectColor('rgba(124, 124, 124, 0.8)')">
+            <span class="griditem22"  style="backgroundColor:rgba(124, 124, 124, 0.8);"></span>Button Dark Shadow
+          </div> 
+          <div @click="selectColor('rgba(226, 226, 226, 0.8)')">
+            <span class="griditem23"  style="backgroundColor:rgba(226, 226, 226, 0.8);"></span>Button Light Shadow
           </div>
-          <div>
-            <span class="griditem23"></span>Button Light Shadow
+          <div @click="selectColor('rgb(0, 0, 0)')">
+            <span class="griditem24"  style="backgroundColor:rgb(0, 0, 0);"></span>ToolTip Text
           </div>
-          <div>
-            <span class="griditem24"></span>ToolTip Text
-          </div>
-          <div>
-            <span class="griditem25"></span>ToolTip
+          <div @click="selectColor('rgb(240, 239, 239)')">
+            <span class="griditem25"  style="backgroundColor:rgb(240, 239, 239);"></span>ToolTip
           </div>
         </div>
       </div>
@@ -234,9 +234,9 @@ export default {
   background: rgb(238, 238, 238);
   /* width: auto;
   height: auto; */
-  padding: 20px;
+  /* padding: 20px; */
   width: 200px;
-  height: 200px;
+  height: 152px;
   border: 1px solid rgb(238, 238, 238);
   box-shadow: 1px 1px gray;
   margin-top: 7px;
@@ -649,12 +649,12 @@ export default {
 /* System */
 .gridcontainer {
   height: 150px;
-  border: 1px solid red;
+  border: 1px solid gray;
   overflow-y: scroll;
   font-size: 12px;
 }
 .griditem1 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(161, 161, 161);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -663,7 +663,7 @@ export default {
   display: inline-block;
 }
 .griditem2 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -672,7 +672,7 @@ export default {
   display: inline-block;
 }
 .griditem3 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(126, 179, 204, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -681,7 +681,7 @@ export default {
   display: inline-block;
 }
 .griditem4 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(155, 201, 223, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -690,7 +690,7 @@ export default {
   display: inline-block;
 }
 .griditem5 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(236, 234, 234, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -708,7 +708,7 @@ export default {
   display: inline-block;
 }
 .griditem7 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(128, 127, 127, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -717,7 +717,7 @@ export default {
   display: inline-block;
 }
 .griditem8 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -726,7 +726,7 @@ export default {
   display: inline-block;
 }
 .griditem9 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -735,7 +735,7 @@ export default {
   display: inline-block;
 }
 .griditem10 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -744,7 +744,7 @@ export default {
   display: inline-block;
 }
 .griditem11 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(173, 172, 172, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -762,7 +762,7 @@ export default {
   display: inline-block;
 }
 .griditem13 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(161, 160, 160, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -771,7 +771,7 @@ export default {
   display: inline-block;
 }
 .griditem14 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(50, 139, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -789,7 +789,7 @@ export default {
   display: inline-block;
 }
 .griditem16 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(235, 235, 235, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -798,7 +798,7 @@ export default {
   display: inline-block;
 }
 .griditem17 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(185, 185, 185, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -807,7 +807,7 @@ export default {
   display: inline-block;
 }
 .griditem18 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(124, 124, 124, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -816,7 +816,7 @@ export default {
   display: inline-block;
 }
 .griditem19 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -825,7 +825,7 @@ export default {
   display: inline-block;
 }
 .griditem20 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -843,7 +843,7 @@ export default {
   display: inline-block;
 }
 .griditem22 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(124, 124, 124, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -852,7 +852,7 @@ export default {
   display: inline-block;
 }
 .griditem23 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(226, 226, 226, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -861,7 +861,7 @@ export default {
   display: inline-block;
 }
 .griditem24 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
@@ -870,7 +870,7 @@ export default {
   display: inline-block;
 }
 .griditem25 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(240, 239, 239);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 14px;
   height: 14px;
