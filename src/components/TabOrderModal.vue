@@ -4,7 +4,7 @@
       <a  href="#popup1">Tab Order</a>
     </div>
 
-    <div id="popup1" class="overlay">
+    <!-- <div id="popup1" class="overlay">
       <div class="popup">
         <h4>Tab Order</h4>
         <a class="close" href="#">&times;</a>
@@ -14,7 +14,81 @@
           <button>Hello</button>
         </div>
       </div>
+    </div> -->
+<div id="popup1" class="overlay">
+    <div class="font-div popup">
+    <div class="font-header">
+      Font
+      <!-- <button style="float:right">X</button> -->
+      <a class="close" href="#">&times;</a>
     </div>
+    <hr style="margin:3px" />
+    <div class="font-body">
+      <div class="wrapper">
+        <div class="wrapper-1">
+          <div>
+            Font:
+            <br />
+            <input type="text" class="font-input-1" />
+            <br />
+            <iframe class="font-first-frame" />
+          </div>
+          <div>
+            <fieldset class="fieldset-1">
+              <legend style="font-size:12px">References</legend>
+            </fieldset>
+          </div>
+        </div>
+        <div class="wrapper-2">
+            <div>
+          Font Style:
+          <br />
+          <input type="text" class="font-input-2" />
+          <br />
+          <iframe class="font-second-frame" />
+            </div>
+            <div class="wrapper-21">
+                <fieldset>
+                    <legend>
+                        Hello
+                    </legend>
+                </fieldset>
+            </div>
+        </div>
+        <div>
+          Size:
+          <br />
+          <input type="text" class="font-input-3" />
+          <br />
+          <div class="font-third-frame">
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
+              <div>11</div>
+              <div>12</div>
+              <div>14</div>
+              <div>16</div>
+              <div>18</div>
+              <div>20</div>
+              <div>22</div>
+              <div>24</div>
+              <div>26</div>
+              <div>36</div>
+              <div>48</div>
+              <div>72</div>
+          </div>
+        </div>
+        <div class="nested">
+          <!-- <div></div> -->
+          <div></div>
+          <button>OK</button>
+          <button>Cancel</button>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
   </div>
 </template>
 
@@ -22,7 +96,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 body {
   font-family: Arial, sans-serif;
 /*   background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat; */
@@ -118,5 +192,13 @@ h1 {
   .popup{
     width: 70%;
   }
+}
+
+/* TEsting */
+.wrapper1{
+  margin-left: 0px;
+}
+.font-div{
+  width:460px;
 }
 </style>

@@ -5,6 +5,10 @@
     <TabOrderModal />
     <hr>
     <ColorPallate />
+    <hr>
+    <FontDialog />
+    <!-- <hr>
+    <RenameMultiPageDialog /> -->
     <!-- <hr />
     <TestModal /> -->
     <!-- <Label />
@@ -72,6 +76,9 @@ import ColorPallate from "./components/ColorPallate.vue";
 import Modal from "./components/Modal.vue";
 import TestModal from './components/TestModal.vue';
 import TabOrderModal from './components/TabOrderModal.vue';
+import FontDialog from './components/FontDialog.vue';
+import RenameMultiPageDialog from './components/RenameMultiPageDialog.vue';
+
 
 
 
@@ -99,7 +106,9 @@ import TabOrderModal from './components/TabOrderModal.vue';
     ColorPallate,
     Modal,
     TestModal,
-    TabOrderModal
+    TabOrderModal,
+    FontDialog,
+    RenameMultiPageDialog
   }
 })
 export default class App extends Vue {}
