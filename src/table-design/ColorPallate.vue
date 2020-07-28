@@ -194,7 +194,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .refdiv {
   border: 0.1px solid gray;
   width: 184px;

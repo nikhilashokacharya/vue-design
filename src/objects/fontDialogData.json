@@ -1,0 +1,1361 @@
+{
+    "fontDialogData": [
+        {
+            "Arial": {
+                "Regular": {
+                    "fontFamily": "Arial"
+                },
+                "Italic": {
+                    "fontFamily": "Arial",
+                    "fontStyle": "italic"
+                },
+                "Bold": {
+                    "fontFamily": "Arial",
+                    "fontWeight": "bold"
+                },
+                "Bold Italic": {
+                    "fontFamily": "Arial",
+                    "fontWeight": "bold",
+                    "fontStyle": "italic"
+                },
+                "Black": {
+                    "fontFamily": "Arial",
+                    "fontWeight": "900"
+                },
+                "Black Oblique": {
+                    "fontFamily": "Arial",
+                    "fontWeight": "900",
+                    "fontStyle": "Oblique"
+                }
+            },
+            "Bahnschrift": {
+                "Light Condensed": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "lighter",
+                    "font-stretch": "condensed"
+                },
+                "Light SemiCondensed": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "lighter",
+                    "font-stretch": "semi-condensed"
+                },
+                "Light": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "lighter"
+                },
+                "SemiLight Condensed": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "300",
+                    "font-stretch": "condensed"
+                },
+                "SemiLight SemiCondensed": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "300",
+                    "font-stretch": "semi-condensed"
+                },
+                "SemiLight": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "300"
+                },
+                "Condensed": {
+                    "font-family": "Bahnschrift",
+                    "font-stretch": "condensed"
+                },
+                "SemiCondensed": {
+                    "font-family": "Bahnschrift",
+                    "font-stretch": "semi-condensed"
+                },
+                "Regular": {
+                    "font-family": "Bahnschrift"
+                },
+                "SemiBold Condensed": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "600",
+                    "font-stretch": "condensed"
+                },
+                "SemiBold SemiCondensed": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "600",
+                    "font-stretch": "semi-condensed"
+                },
+                "SemiBold": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "600"
+                },
+                "Bold Condensed": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "bold",
+                    "font-stretch": "condensed"
+                },
+                "Bold SemiCondensed": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "bold",
+                    "font-stretch": "semi-condensed"
+                },
+                "Bold": {
+                    "font-family": "Bahnschrift",
+                    "font-weight": "bold"
+                }
+            },
+            "Franklin Gothic": {
+                "Medium": {
+                    "font-family": "Franklin Gothic",
+                    "font-stretch": "extra-condensed"
+                },
+                "Medium Italic": {
+                    "font-family": "Franklin Gothic",
+                    "font-stretch": "extra-condensed",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Franklin Gothic",
+                    "font-weight": "bold"
+                },
+                "Italic Bold": {
+                    "font-family": "Franklin Gothic",
+                    "font-weight": "bold",
+                    "font-style": "italic"
+                }
+            },
+            "Helvetica": {
+                "Narrow": {
+                    "font-family": "Helvetica",
+                    "font-stretch": "ultra-condensed"
+                },
+                "Narrow Italic": {
+                    "font-family": "Helvetica",
+                    "font-stretch": "ultra-condensed",
+                    "font-style": "italic"
+                },
+                "Narrow Bold": {
+                    "font-family": "Helvetica",
+                    "font-stretch": "ultra-condensed",
+                    "font-weight": "bold"
+                },
+                "Narrow Bold Italic": {
+                    "font-family": "Helvetica",
+                    "font-stretch": "ultra-condensed",
+                    "font-weight": "bold",
+                    "font-style": "italic"
+                }
+            },
+            "Segoe UI": {
+                "Light": {
+                    "font-family": "Segoe UI",
+                    "font-weight": "lighter"
+                },
+                "Light Italic": {
+                    "font-family": "Segoe UI",
+                    "font-weight": "lighter",
+                    "font-style": "italic"
+                },
+                "Semilight": {
+                    "font-family": "Segoe UI",
+                    "font-weight": "300"
+                },
+                "Semilight Italic": {
+                    "font-family": "Segoe UI",
+                    "font-weight": "300",
+                    "font-style": "italic"
+                },
+                "Regular": {
+                    "font-family": "Segoe UI"
+                },
+                "Italic": {
+                    "font-family": "Segoe UI",
+                    "font-style": "italic"
+                },
+                "Semibold": {
+                    "font-family": "Segoe UI",
+                    "font-weight": "600"
+                },
+                "Semibold Italic": {
+                    "font-family": "Segoe UI",
+                    "font-weight": "600",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Segoe UI",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Segoe UI",
+                    "font-weight": "bold",
+                    "font-style": "italic"
+                },
+                "Black": {
+                    "font-family": "Segoe UI",
+                    "font-weight": "900"
+                },
+                "Black Italic": {
+                    "font-family": "Segoe UI",
+                    "font-weight": "900",
+                    "font-style": "italic"
+                }
+            },
+            "System": {
+                "Bold": {
+                    "font-family": "System",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "System",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Cambria": {
+                "Regular": {
+                    "font-family": "Cambria"
+                },
+                "Italic": {
+                    "font-family": "Cambria",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Cambria",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Cambria",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Comic Sans MS": {
+                "Regular": {
+                    "font-family": "Comic Sans MS"
+                },
+                "Italic": {
+                    "font-family": "Comic Sans MS",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Comic Sans MS",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Comic Sans MS",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Consolas": {
+                "Regular": {
+                    "font-family": "Consolas"
+                },
+                "Italic": {
+                    "font-family": "Consolas",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Consolas",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Consolas",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Constantia": {
+                "Regular": {
+                    "font-family": "Constantia"
+                },
+                "Italic": {
+                    "font-family": "Constantia",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Constantia",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Constantia",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Courier New": {
+                "Regular": {
+                    "font-family": "Courier New"
+                },
+                "Italic": {
+                    "font-family": "Courier New",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Courier New",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Courier New",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Georgia": {
+                "Regular": {
+                    "font-family": "Georgia"
+                },
+                "Italic": {
+                    "font-family": "Georgia",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Georgia",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Georgia",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Palatino Linotype": {
+                "Regular": {
+                    "font-family": "Palatino Linotype"
+                },
+                "Italic": {
+                    "font-family": "Palatino Linotype",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Palatino Linotype",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Palatino Linotype",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Sitka Banner": {
+                "Regular": {
+                    "font-family": "Sitka Banner"
+                },
+                "Italic": {
+                    "font-family": "Sitka Banner",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Sitka Banner",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Sitka Banner",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Sitka Display": {
+                "Regular": {
+                    "font-family": "Sitka Display"
+                },
+                "Italic": {
+                    "font-family": "Sitka Display",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Sitka Display",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Sitka Display",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Sitka Heading": {
+                "Regular": {
+                    "font-family": "Sitka Heading"
+                },
+                "Italic": {
+                    "font-family": "Sitka Heading",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Sitka Heading",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Sitka Heading",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Sitka Small": {
+                "Regular": {
+                    "font-family": "Sitka Small"
+                },
+                "Italic": {
+                    "font-family": "Sitka Small",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Sitka Small",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Sitka Small",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Sitka Subheading": {
+                "Regular": {
+                    "font-family": "Sitka Subheading"
+                },
+                "Italic": {
+                    "font-family": "Sitka Subheading",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Sitka Subheading",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Sitka Subheading",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Sitka Text": {
+                "Regular": {
+                    "font-family": "Sitka Text"
+                },
+                "Italic": {
+                    "font-family": "Sitka Text",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Sitka Text",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Sitka Text",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Solid Edge ANSI": {
+                "Regular": {
+                    "font-family": "Solid Edge ANSI"
+                },
+                "Italic": {
+                    "font-family": "Solid Edge ANSI",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Solid Edge ANSI",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Solid Edge ANSI",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Solid Edge ISO": {
+                "Regular": {
+                    "font-family": "Solid Edge ISO"
+                },
+                "Italic": {
+                    "font-family": "Solid Edge ISO",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Solid Edge ISO",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Solid Edge ISO",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Times New Roman": {
+                "Regular": {
+                    "font-family": "Times New Roman"
+                },
+                "Italic": {
+                    "font-family": "Times New Roman",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Times New Roman",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Times New Roman",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Trebuchet MS": {
+                "Regular": {
+                    "font-family": "Trebuchet MS"
+                },
+                "Italic": {
+                    "font-family": "Trebuchet MS",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Trebuchet MS",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Trebuchet MS",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Verdana": {
+                "Regular": {
+                    "font-family": "Verdana"
+                },
+                "Italic": {
+                    "font-family": "Verdana",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Verdana",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Verdana",
+                    "font-style": "italic",
+                    "font-weight": "bold"
+                }
+            },
+            "Cambria Math": {
+                "Regular": {
+                    "font-family": "Cambria Math"
+                },
+                "Oblique": {
+                    "font-family": "Cambria Math",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Cambria Math",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Cambria Math",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Courier": {
+                "Regular": {
+                    "font-family": "Courier"
+                },
+                "Oblique": {
+                    "font-family": "Courier",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Courier",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Courier",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Fixedsys": {
+                "Regular": {
+                    "font-family": "Fixedsys"
+                },
+                "Oblique": {
+                    "font-family": "Fixedsys",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Fixedsys",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Fixedsys",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Gabriola": {
+                "Regular": {
+                    "font-family": "Gabriola"
+                },
+                "Oblique": {
+                    "font-family": "Gabriola",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Gabriola",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Gabriola",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "HoloLens MDL2 Assets": {
+                "Regular": {
+                    "font-family": "HoloLens MDL2 Assets"
+                },
+                "Oblique": {
+                    "font-family": "HoloLens MDL2 Assets",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "HoloLens MDL2 Assets",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "HoloLens MDL2 Assets",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "IGES 1001": {
+                "Regular": {
+                    "font-family": "IGES 1001"
+                },
+                "Oblique": {
+                    "font-family": "IGES 1001",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "IGES 1001",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "IGES 1001",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "IGES 1002": {
+                "Regular": {
+                    "font-family": "IGES 1002"
+                },
+                "Oblique": {
+                    "font-family": "IGES 1002",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "IGES 1002",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "IGES 1002",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "IGES 1003": {
+                "Regular": {
+                    "font-family": "IGES 1003"
+                },
+                "Oblique": {
+                    "font-family": "IGES 1003",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "IGES 1003",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "IGES 1003",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Impact": {
+                "Regular": {
+                    "font-family": "Impact"
+                },
+                "Oblique": {
+                    "font-family": "Impact",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Impact",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Impact",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Ink Free": {
+                "Regular": {
+                    "font-family": "Ink Free"
+                },
+                "Oblique": {
+                    "font-family": "Ink Free",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Ink Free",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Ink Free",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Lucida Console": {
+                "Regular": {
+                    "font-family": "Lucida Console"
+                },
+                "Oblique": {
+                    "font-family": "Lucida Console",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Lucida Console",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Lucida Console",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Lucida Sans Unicode": {
+                "Regular": {
+                    "font-family": "Lucida Sans Unicode"
+                },
+                "Oblique": {
+                    "font-family": "Lucida Sans Unicode",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Lucida Sans Unicode",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Lucida Sans Unicode",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Microsoft Sans Serif": {
+                "Regular": {
+                    "font-family": "Microsoft Sans Serif"
+                },
+                "Oblique": {
+                    "font-family": "Microsoft Sans Serif",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Microsoft Sans Serif",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Microsoft Sans Serif",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Modern": {
+                "Regular": {
+                    "font-family": "Modern"
+                },
+                "Oblique": {
+                    "font-family": "Modern",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Modern",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Modern",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "MS Sans Serif": {
+                "Regular": {
+                    "font-family": "MS Sans Serif"
+                },
+                "Oblique": {
+                    "font-family": "MS Sans Serif",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "MS Sans Serif",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "MS Sans Serif",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "MS Serif": {
+                "Regular": {
+                    "font-family": "MS Serif"
+                },
+                "Oblique": {
+                    "font-family": "MS Serif",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "MS Serif",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "MS Serif",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Roman": {
+                "Regular": {
+                    "font-family": "Roman"
+                },
+                "Oblique": {
+                    "font-family": "Roman",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Roman",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Roman",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "SEGDT": {
+                "Regular": {
+                    "font-family": "SEGDT"
+                },
+                "Oblique": {
+                    "font-family": "SEGDT",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "SEGDT",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "SEGDT",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Segoe MDL2 Assets": {
+                "Regular": {
+                    "font-family": "Segoe MDL2 Assets"
+                },
+                "Oblique": {
+                    "font-family": "Segoe MDL2 Assets",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Segoe MDL2 Assets",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Segoe MDL2 Assets",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Segoe Print": {
+                "Regular": {
+                    "font-family": "Segoe Print"
+                },
+                "Oblique": {
+                    "font-family": "Segoe Print",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Segoe Print",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Segoe Print",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Segoe Script": {
+                "Regular": {
+                    "font-family": "Segoe Script"
+                },
+                "Oblique": {
+                    "font-family": "Segoe Script",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Segoe Script",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Segoe Script",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Segoe UI Emoji": {
+                "Regular": {
+                    "font-family": "Segoe UI Emoji"
+                },
+                "Oblique": {
+                    "font-family": "Segoe UI Emoji",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Segoe UI Emoji",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Segoe UI Emoji",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Segoe UI Symbol": {
+                "Regular": {
+                    "font-family": "Segoe UI Symbol"
+                },
+                "Oblique": {
+                    "font-family": "Segoe UI Symbol",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Segoe UI Symbol",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Segoe UI Symbol",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "SEMonotxt": {
+                "Regular": {
+                    "font-family": "SEMonotxt"
+                },
+                "Oblique": {
+                    "font-family": "SEMonotxt",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "SEMonotxt",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "SEMonotxt",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "SERomand": {
+                "Regular": {
+                    "font-family": "SERomand"
+                },
+                "Oblique": {
+                    "font-family": "SERomand",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "SERomand",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "SERomand",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "SERomans": {
+                "Regular": {
+                    "font-family": "SERomans"
+                },
+                "Oblique": {
+                    "font-family": "SERomans",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "SERomans",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "SERomans",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "SESimplex": {
+                "Regular": {
+                    "font-family": "SESimplex"
+                },
+                "Oblique": {
+                    "font-family": "SESimplex",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "SESimplex",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "SESimplex",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "SETxt": {
+                "Regular": {
+                    "font-family": "SETxt"
+                },
+                "Oblique": {
+                    "font-family": "SETxt",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "SETxt",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "SETxt",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Small Fonts": {
+                "Regular": {
+                    "font-family": "Small Fonts"
+                },
+                "Oblique": {
+                    "font-family": "Small Fonts",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Small Fonts",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Small Fonts",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Solid Edge ANSI1 Symbols": {
+                "Regular": {
+                    "font-family": "Solid Edge ANSI1 Symbols"
+                },
+                "Oblique": {
+                    "font-family": "Solid Edge ANSI1 Symbols",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Solid Edge ANSI1 Symbols",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Solid Edge ANSI1 Symbols",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Solid Edge ANSI2 Symbols": {
+                "Regular": {
+                    "font-family": "Solid Edge ANSI2 Symbols"
+                },
+                "Oblique": {
+                    "font-family": "Solid Edge ANSI2 Symbols",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Solid Edge ANSI2 Symbols",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Solid Edge ANSI2 Symbols",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Solid Edge ANSI3 Symbols": {
+                "Regular": {
+                    "font-family": "Solid Edge ANSI3 Symbols"
+                },
+                "Oblique": {
+                    "font-family": "Solid Edge ANSI3 Symbols",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Solid Edge ANSI3 Symbols",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Solid Edge ANSI3 Symbols",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Solid Edge ISO1 Symbols": {
+                "Regular": {
+                    "font-family": "Solid Edge ISO1 Symbols"
+                },
+                "Oblique": {
+                    "font-family": "Solid Edge ISO1 Symbols",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Solid Edge ISO1 Symbols",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Solid Edge ISO1 Symbols",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Solid Edge ISO2 Symbols": {
+                "Regular": {
+                    "font-family": "Solid Edge ISO2 Symbols"
+                },
+                "Oblique": {
+                    "font-family": "Solid Edge ISO2 Symbols",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Solid Edge ISO2 Symbols",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Solid Edge ISO2 Symbols",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Solid Edge ISO3 Symbols": {
+                "Regular": {
+                    "font-family": "Solid Edge ISO3 Symbols"
+                },
+                "Oblique": {
+                    "font-family": "Solid Edge ISO3 Symbols",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Solid Edge ISO3 Symbols",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Solid Edge ISO3 Symbols",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Solid Edge Stencil": {
+                "Regular": {
+                    "font-family": "Solid Edge Stencil"
+                },
+                "Oblique": {
+                    "font-family": "Solid Edge Stencil",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Solid Edge Stencil",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Solid Edge Stencil",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Script": {
+                "Regular": {
+                    "font-family": "Script"
+                },
+                "Oblique": {
+                    "font-family": "Script",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Script",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Script",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Symbol": {
+                "Regular": {
+                    "font-family": "Symbol"
+                },
+                "Oblique": {
+                    "font-family": "Symbol",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Symbol",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Symbol",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Tahoma": {
+                "Regular": {
+                    "font-family": "Tahoma"
+                },
+                "Oblique": {
+                    "font-family": "Tahoma",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Tahoma",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Tahoma",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Terminal": {
+                "Regular": {
+                    "font-family": "Terminal"
+                },
+                "Oblique": {
+                    "font-family": "Terminal",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Terminal",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Terminal",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Webdings": {
+                "Regular": {
+                    "font-family": "Webdings"
+                },
+                "Oblique": {
+                    "font-family": "Webdings",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Webdings",
+                    "font-weight": "bold"
+                },
+                "Bold Oblique": {
+                    "font-family": "Webdings",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Wingdings": {
+                "Regular": {
+                    "font-family": "Wingdings"
+                },
+                "Oblique": {
+                    "font-family": "Wingdings",
+                    "font-style": "oblique"
+                },
+                "Bold": {
+                    "font-family": "Wingdings",
+                    "font-weight": "bold"
+                },
+                "Wingdings": {
+                    "font-family": "Wingdings",
+                    "font-weight": "bold",
+                    "font-style": "oblique"
+                }
+            },
+            "Calibri": {
+                "Light": {
+                    "font-family": "Calibri",
+                    "font-weight": "lighter"
+                },
+                "Light Italic": {
+                    "font-family": "Calibri",
+                    "font-weight": "lighter",
+                    "font-style": "italic"
+                },
+                "Italic": {
+                    "font-family": "Calibri",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Calibri",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Calibri",
+                    "font-weight": "bold",
+                    "font-style": "italic"
+                }
+            },
+            "Candara": {
+                "Light": {
+                    "font-family": "Candara",
+                    "font-weight": "lighter"
+                },
+                "Light Italic": {
+                    "font-family": "Candara",
+                    "font-weight": "lighter",
+                    "font-style": "italic"
+                },
+                "Italic": {
+                    "font-family": "Candara",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Candara",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Candara",
+                    "font-weight": "bold",
+                    "font-style": "italic"
+                }
+            },
+            "Corbel": {
+                "Light": {
+                    "font-family": "Corbel",
+                    "font-weight": "lighter"
+                },
+                "Light Italic": {
+                    "font-family": "Corbel",
+                    "font-weight": "lighter",
+                    "font-style": "italic"
+                },
+                "Italic": {
+                    "font-family": "Corbel",
+                    "font-style": "italic"
+                },
+                "Bold": {
+                    "font-family": "Corbel",
+                    "font-weight": "bold"
+                },
+                "Bold Italic": {
+                    "font-family": "Corbel",
+                    "font-weight": "bold",
+                    "font-style": "italic"
+                }
+            }
+        }
+    ]
+}

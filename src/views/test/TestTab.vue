@@ -26,7 +26,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 nav ul {
   list-style: none;
   padding: 0;

@@ -32,7 +32,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .commandbutton {
   width: 130px;
   height: 35px;

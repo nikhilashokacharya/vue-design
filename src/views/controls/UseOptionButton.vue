@@ -11,7 +11,7 @@
 export default {};
 </script>
 
-<style >
+<style scoped>
 .radio {
   background-color: rgb(238, 238, 238);
   /* border: 0.2px solid gray; */
@@ -21,6 +21,8 @@ export default {};
 }
 .radio-input {
     float: left;
+    /* padding-top:5px; */
+    margin-top: 5px;
 
 }
 .radio-label{

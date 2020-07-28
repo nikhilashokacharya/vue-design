@@ -33,7 +33,7 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
 .labeldiv{
     position: relative;
     /* height: 400px; */

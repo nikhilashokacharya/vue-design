@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* For default values */
 .text-box-design{
     border:0.2px solid gray;

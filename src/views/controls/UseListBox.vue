@@ -8,7 +8,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .listbox{
     height: 100px;
     width:85px;

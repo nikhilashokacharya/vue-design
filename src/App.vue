@@ -1,114 +1,91 @@
 <template>
   <div id="app">
-    <Modal />
+    <UseCheckBox />
+    <hr />
+    <UseComboBox />
+    <hr />
+    <UseCommandButton />
+    <hr />
+    <UseFrame />
+    <hr />
+    <UseLabel />
+    <hr />
+    <UseListBox />
+    <hr />
+    <UseMultiPage />
+    <hr />
+    <UseOptionButton />
+    <hr />
+    <UsePicture />
+    <hr />
+    <UseRefEdit />
+    <hr />
+    <UseScroll />
+    <hr />
+    <UseSpinButton />
+    <hr />
+    <UseTabStrip />
+    <hr />
+    <UseTextBox />
+    <hr />
+    <UseToggleButton />
+    <hr />
+    <hr />
+    <ControlContextMenu />
+    <hr />
+    <UserformContextMenu />
     <hr>
-    <TabOrderModal />
-    <hr>
-    <ColorPallate />
-    <hr>
-    <FontDialog />
-    <!-- <hr>
-    <RenameMultiPageDialog /> -->
-    <!-- <hr />
-    <TestModal /> -->
-    <!-- <Label />
-    <hr />
-    <textBox />TextBox
-    <hr />
-    <checkBox />
-    <hr />
-    <OptionButton />
-    <hr />
-    <ToggleButton />
-    <hr />
-    <ListBox />ListBox
-    <hr />
-    <CommandButton />
-    <hr />
-    <TabStrip />
-    <hr />
-    <MultiPage />
-    <hr />
-    <Frame />
-    <hr />
-    <SpinButton />
-SpinButton
-    <hr />
-    <Picture />
-Picture
-    <hr />
-    <ComboBox />
-    <hr />
-    <RefEdit />
-    <hr />
+    <TestControlContextMenu />
 
-    <TestRefEdit />
-    <hr />
-    <TestComboBox />
-    <hr />
-    <TestScroll1 /> -->
     <div style="padding-bottom:100px"></div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import TextBox from "./components/TextBox.vue";
-import CheckBox from "./components/CheckBox.vue";
-import OptionButton from "./components/OptionButton.vue";
-import ToggleButton from "./components/ToggleButton.vue";
-import ListBox from "./components/ListBox.vue";
-import TabStrip from "./components/TabStrip.vue";
-import MultiPage from "./components/MultiPage.vue";
-import Frame from "./components/Frame.vue";
-import SpinButton from "./components/SpinButton.vue";
-import Picture from "./components/Picture.vue";
-import Label from "./components/Label.vue";
-import CommandButton from "./components/CommandButton.vue";
-import ScrollBars from "./components/ScrollBars.vue";
-import ComboBox from "./components/ComboBox.vue";
-import RefEdit from "./components/RefEdit.vue";
-// import TestTab from "./components/TestTab.vue";
-import TestRefEdit from "./components/TestRefEdit.vue";
-import TestComboBox from "./components/TestComboBox.vue";
-import TestScroll1 from "./components/TestScroll1.vue";
-import ColorPallate from "./components/ColorPallate.vue";
-import Modal from "./components/Modal.vue";
-import TestModal from './components/TestModal.vue';
-import TabOrderModal from './components/TabOrderModal.vue';
-import FontDialog from './components/FontDialog.vue';
-import RenameMultiPageDialog from './components/RenameMultiPageDialog.vue';
+import UseCheckBox from "./views/controls/UseCheckBox.vue";
+import UseComboBox from "./views/controls/UseComboBox.vue";
+import UseCommandButton from "./views/controls/UseCommandButton.vue";
+import UseFrame from "./views/controls/UseFrame.vue";
+import UseLabel from "./views/controls/UseLabel.vue";
 
+import UseListBox from "./views/controls/UseListBox.vue";
+import UseMultiPage from "./views/controls/UseMultiPage.vue";
+import UseOptionButton from "./views/controls/UseOptionButton.vue";
+import UsePicture from "./views/controls/UsePicture.vue";
+import UseRefEdit from "./views/controls/UseRefEdit.vue";
 
+import UseScroll from "./views/controls/UseScroll.vue";
+import UseSpinButton from "./views/controls/UseSpinButton.vue";
+import UseTabStrip from "./views/controls/UseTabStrip.vue";
+import UseTextBox from "./views/controls/UseTextBox.vue";
+import UseToggleButton from "./views/controls/UseToggleButton.vue";
 
+import ControlContextMenu from "./views/contextMenu/ControlContextMenu.vue";
+import UserformContextMenu from "./views/contextMenu/UserformContextMenu.vue";
+
+import TestControlContextMenu from "./views/test/TestControlContextMenu.vue";
 
 @Component({
   components: {
-    TextBox,
-    CheckBox,
-    OptionButton,
-    ToggleButton,
-    ListBox,
-    TabStrip,
-    MultiPage,
-    ScrollBars,
-    Frame,
-    SpinButton,
-    Picture,
-    Label,
-    CommandButton,
-    ComboBox,
-    RefEdit,
-    // TestTab,
-    TestRefEdit,
-    TestComboBox,
-    TestScroll1,
-    ColorPallate,
-    Modal,
-    TestModal,
-    TabOrderModal,
-    FontDialog,
-    RenameMultiPageDialog
+    UseCheckBox,
+    UseComboBox,
+    UseCommandButton,
+    UseFrame,
+    UseLabel,
+    UseListBox,
+    UseMultiPage,
+    UseOptionButton,
+    UsePicture,
+    UseRefEdit,
+    UseScroll,
+    UseSpinButton,
+    UseTabStrip,
+    UseTextBox,
+    UseToggleButton,
+    ControlContextMenu,
+    UserformContextMenu,
+    TestControlContextMenu
   }
 })
 export default class App extends Vue {}

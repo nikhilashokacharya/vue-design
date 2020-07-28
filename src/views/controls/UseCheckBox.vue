@@ -13,7 +13,7 @@
 export default {};
 </script>
 
-<style >
+<style scoped>
 .form-group {
     background-color: rgb(238, 238, 238);
   padding-top: 5px;
