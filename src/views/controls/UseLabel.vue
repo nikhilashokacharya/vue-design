@@ -1,58 +1,52 @@
 <template>
-<div class="labeldiv">
-    <div class="label-border" v-if="clicked===false" @click="toSelect">
-   <input class="label" value="Label1"/>
-   <!-- <textarea class="label">Label1</textarea> -->
-   </div>
-    <div class="label-border" v-else @click="toSelect">
-      <a class="span4">
-        <a class="span3">
-          <a class="span2">
-            <a class="span1">
-              <input class="label" value="Label1"/>
+  <div class="labeldiv">
+    <div class="label-border" @click="toSelect">
+      <a :class="isActive&&'span4'">
+        <a :class="isActive&&'span3'">
+          <a :class="isActive&&'span2'">
+            <a :class="isActive&&'span1'">
+              <input class="label" value="Label1" />
             </a>
           </a>
         </a>
       </a>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
 export default {
-    data(){
-    return{
-        clicked:false
-    }
+  data() {
+    return {
+      isActive: false,
+    };
+  },
+  methods: {
+    toSelect() {
+      this.isActive = true;
     },
-    methods:{
-        toSelect(){
-            this.clicked=!this.clicked;
-        }
-    }
-
-}
+  },
+};
 </script>
 <style scoped>
-.labeldiv{
-    position: relative;
-    /* height: 400px; */
+.labeldiv {
+  position: relative;
+  /* height: 400px; */
 }
-.label{
-    position: inherit;
-    /* top:0px; */
-	border:none;
-    width:130px;
-    background-color:rgb(238, 238, 238);
-    height:30px;
-    text-align: left;
-    
+.label {
+  position: inherit;
+  /* top:0px; */
+  border: none;
+  width: 130px;
+  background-color: rgb(238, 238, 238);
+  height: 30px;
+  text-align: left;
 }
-.label-border{
-    border:none;
-    width:130px;
-    background-color:rgb(238, 238, 238);
-    height:30px;
+.label-border {
+  border: none;
+  width: 130px;
+  background-color: rgb(238, 238, 238);
+  height: 30px;
 }
 .span1 {
   outline: dotted 1.5px black;
