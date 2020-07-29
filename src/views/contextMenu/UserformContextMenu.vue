@@ -18,7 +18,12 @@
             <u>P</u>aste
           </span>
         </button>
-        <div>
+        
+        <button class="wrapper1-context">
+         <div></div>
+         <span class="set-context"><u>D</u>elete</span>
+       </button>
+       <div>
           <hr />
         </div>
         <button class="wrapper1-context">
