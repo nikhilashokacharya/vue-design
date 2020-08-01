@@ -1,16 +1,9 @@
 <template>
 <div>
-<!-- <div class="refdiv">
-  <input class="refinput" />
-    <button class="refbutton" @click="clicked">
-      <strong>_</strong>
-    </button>
-    </div> -->
     <div class="buttonIn">
-        <input type="text" id="enter"/>
+        <input type="text" style="width:97%" id="enter"/>
         <button id="clear" @click="clicked"><strong>_</strong></button>
       </div>
-<!-- <button ></button> -->
   <div class="tabs" style="margin: 0px 0px" v-if="clickedPallete">
     <div class="tab">
       <input class="tabinput" type="radio" id="tab-1" name="tab-group-1" checked />
@@ -91,7 +84,7 @@
       <div class="content">
         <div class="gridcontainer">
           <div @click="selectColor('rgb(161, 161, 161)')">
-            <span class="griditem1"  style="backgroundColor:rgb(161, 161, 161);"></span>Scroll Bars
+            <span class="griditem1"  style="backgroundColor:rgb(161, 161, 161);"></span><span>Scroll Bars</span>
           </div>
           <div @click="selectColor('rgb(0, 0, 0)')">
             <span class="griditem2"  style="backgroundColor:rgb(0, 0, 0);"></span>Desktop
@@ -223,6 +216,7 @@ export default {
   margin-left: -1px;
   position: relative;
   left: 1px;
+  height: 20px;
 }
 .tab [type="radio"] {
   display: none;
@@ -239,7 +233,7 @@ export default {
   height: 152px;
   border: 1px solid rgb(238, 238, 238);
   box-shadow: 1px 1px gray;
-  margin-top: 7px;
+  margin-top: 0px;
 }
 [type="radio"]:checked ~ label {
   background: ccc;

@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <UseCheckBox />
+    <!-- <testControlContextMenu2 />
+    <hr> -->
+    <!-- <UseLabel />
+    <hr /> -->
+    <!-- <UseCheckBox />
     <hr />
     <UseComboBox />
     <hr />
@@ -8,8 +12,7 @@
     <hr />
     <UseFrame />
     <hr />
-    <UseLabel />
-    <hr />
+    
     <UseListBox />
     <hr />
     <UseMultiPage />
@@ -30,14 +33,28 @@
     <hr />
     <UseToggleButton />
     <hr />
-    <hr />
-    <ControlContextMenu />
-    <hr />
-    <UserformContextMenu />
+    <hr /> -->
+    <!-- <testControlContextMenu4 />
     <hr>
-    <TestControlContextMenu />
-
-    <div style="padding-bottom:100px"></div>
+    <testControlContextMenu3 />
+    <hr> -->
+    <!-- <ControlContextMenu />
+    <hr /> 
+    <UserformContextMenu />
+    <hr> -->
+    <tabOrderModal />
+    <hr>
+    <ErrorPopUp />
+    <hr>
+    <ToolBox />
+    <hr>
+    <UserFormDesign />
+    <hr>
+    <!-- <ColorPallate /> -->
+    <!-- <testTabOrder /> -->
+    <!-- <hr>
+    <Pop-up-tutorial /> -->
+    <div style="margin-bottom:100px"></div>
   </div>
 </template>
 
@@ -63,8 +80,16 @@ import UseToggleButton from "./views/controls/UseToggleButton.vue";
 
 import ControlContextMenu from "./views/contextMenu/ControlContextMenu.vue";
 import UserformContextMenu from "./views/contextMenu/UserformContextMenu.vue";
-
-import TestControlContextMenu from "./views/test/TestControlContextMenu.vue";
+import ErrorPopUp from './views/dialogs/ErrorPopUp.vue'
+// import testControlContextMenu2 from "./views/test/testControlContextMenu2.vue";
+// import testTabOrder from './views/test/testTabOrder.vue';
+import testControlContextMenu3 from './views/test/testControlContextMenu3.vue';
+// import testControlContextMenu4 from './views/test/testControlContextMenu4.vue';
+import TabOrderModal from './views/dialogs/TabOrderModal.vue'
+import PopUpTutorial from './views/dialogs/Pop-up-tutorial.vue'
+import ColorPallate from './table-design/ColorPallate.vue'
+import ToolBox from './views/dialogs/ToolBox.vue'
+import UserFormDesign from './views/dialogs/UserFormDesign.vue'
 
 @Component({
   components: {
@@ -85,7 +110,16 @@ import TestControlContextMenu from "./views/test/TestControlContextMenu.vue";
     UseToggleButton,
     ControlContextMenu,
     UserformContextMenu,
-    TestControlContextMenu
+    // testControlContextMenu2,
+    // testTabOrder,
+    testControlContextMenu3,
+    // testControlContextMenu4,
+    TabOrderModal,
+    ErrorPopUp,
+    PopUpTutorial,
+    ColorPallate,
+    ToolBox,
+    UserFormDesign
   }
 })
 export default class App extends Vue {}
