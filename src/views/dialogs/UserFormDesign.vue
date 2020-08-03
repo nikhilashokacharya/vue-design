@@ -62,11 +62,6 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component({})
 export default class UserFormDesign extends Vue {
-//     innerWindowContainer = {
-//     backgroundSize: " 9px 10px",
-//     backgroundImage:
-//       "radial-gradient(circle, rgb(0, 0, 0) 0.5px, rgba(0, 0, 0, 0) 0.2px)"
-//   };
 }
 </script>
 

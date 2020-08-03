@@ -6,13 +6,8 @@
           <span>ToolBox</span>
         </div>
         <div>
-          <!-- <button>X</button> -->
           <span class="closeButton">
-            <img
-              class="close"
-              @click="handleClose"
-              src="https://img.icons8.com/fluent/48/000000/close-window.png"
-            />
+            <img class="close" src="https://img.icons8.com/fluent/48/000000/close-window.png" />
           </span>
         </div>
       </div>
@@ -20,221 +15,188 @@
         <div>
           <Button class="toolbox-tab">Controls</Button>
         </div>
-        <div class="toolbox-icons">
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/SelectIcon.png"
-              alt="SelectIcon"
-              class="image toolbox-icon"
-              
-            />
-            <div class="overlay">
-              <div class="text"></div>
+        <!-- <div class="toolbox-icon-border"> -->
+          <div class="toolbox-icons">
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/SelectIcon.png"
+                alt="SelectIcon"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/Label.png"
+                alt="Label"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/TextBox.png"
+                alt="TextBox"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/ComboBox.png"
+                alt="ComboBox"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/ListBox.png"
+                alt="ListBox"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/CheckBox.png"
+                alt="CheckBox"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/OptionButton.png"
+                alt="OptionButton"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/ToggleButton.png"
+                alt="ToggleButton"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/Frame.png"
+                alt="Frame"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/CommandButton.png"
+                alt="CommandButton"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/TabStrip.png"
+                alt="TabStrip"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/MultiPage.png"
+                alt="MultiPage"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/ScrollBar.png"
+                alt="ScrollBar"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/SpinButton.png"
+                alt="SpinButton"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/Picture.png"
+                alt="Picture"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="container">
+              <img
+                src="../../assets/toolbox icons/RefEdit.png"
+                alt="RefEdit"
+                class="image toolbox-icon"
+              />
+              <div class="overlay">
+                <div class="text"></div>
+              </div>
             </div>
           </div>
-          <div class="container">
-            <img src="../../assets/toolbox icons/Label.png" alt="Label" class="image toolbox-icon" />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/TextBox.png"
-              alt="TextBox"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/ComboBox.png"
-              alt="ComboBox"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/ListBox.png"
-              alt="ListBox"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/CheckBox.png"
-              alt="CheckBox"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/OptionButton.png"
-              alt="OptionButton"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/ToggleButton.png"
-              alt="ToggleButton"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img src="../../assets/toolbox icons/Frame.png" alt="Frame" class="image toolbox-icon" />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/CommandButton.png"
-              alt="CommandButton"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/TabStrip.png"
-              alt="TabStrip"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/MultiPage.png"
-              alt="MultiPage"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/ScrollBar.png"
-              alt="ScrollBar"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/SpinButton.png"
-              alt="SpinButton"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/Picture.png"
-              alt="Picture"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <div class="container">
-            <img
-              src="../../assets/toolbox icons/RefEdit.png"
-              alt="RefEdit"
-              class="image toolbox-icon"
-            />
-            <div class="overlay">
-              <div class="text"></div>
-            </div>
-          </div>
-          <!-- <img
-            src="../../assets/toolbox icons/SelectIcon.png"
-            alt="SelectIcon"
-            class="toolbox-icon"
-          />
-          <img src="../../assets/toolbox icons/Label.png" alt="Label" class="toolbox-icon" />
-          <img src="../../assets/toolbox icons/TextBox.png" alt="TextBox" class="toolbox-icon" />
-          <img src="../../assets/toolbox icons/ComboBox.png" alt="ComboBox" class="toolbox-icon" />
-          <img src="../../assets/toolbox icons/ListBox.png" alt="ListBox" class="toolbox-icon" />
-          <img src="../../assets/toolbox icons/CheckBox.png" alt="CheckBox" class="toolbox-icon" />
-          <img
-            src="../../assets/toolbox icons/OptionButton.png"
-            alt="OptionButton"
-            class="toolbox-icon"
-          />
-          <img
-            src="../../assets/toolbox icons/ToggleButton.png"
-            alt="ToggleButton"
-            class="toolbox-icon"
-          />
-          <img src="../../assets/toolbox icons/Frame.png" alt="Frame" class="toolbox-icon" />
-          <img
-            src="../../assets/toolbox icons/CommandButton.png"
-            alt="CommandButton"
-            class="toolbox-icon"
-          />
-          <img src="../../assets/toolbox icons/TabStrip.png" alt="TabStrip" class="toolbox-icon" />
-          <img src="../../assets/toolbox icons/MultiPage.png" alt="MultiPage" class="toolbox-icon" />
-          <img src="../../assets/toolbox icons/ScrollBar.png" alt="ScrollBar" class="toolbox-icon" />
-          <img
-            src="../../assets/toolbox icons/SpinButton.png"
-            alt="SpinButton"
-            class="toolbox-icon"
-          />
-          <img src="../../assets/toolbox icons/Picture.png" alt="Picture" class="toolbox-icon" />
-          <img src="../../assets/toolbox icons/RefEdit.png" alt="RefEdit" class="toolbox-icon" />-->
-        </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-    methods:{
-        // clicked(){
-
-        // }
-    }
-};
+export default {};
 </script>
 
 <style scoped>
 .outer-toolbox-div {
   border: 0.1px solid gray;
   background-color: rgb(238, 238, 238);
-  min-height: 130px;
+  /* min-height: 130px; */
   box-shadow: 2px 2px lightgrey;
-  height: fit-content;
-  min-width: 220px;
-  width: fit-content;
+  height: 150px;
+  /* min-width: 220px; */
+  width: 250px;
 }
 .toolbox-header {
   display: grid;
@@ -244,9 +206,12 @@ export default {
   background-color: white;
 }
 .toolbox-body {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 6fr; */
   background-color: rgb(238, 238, 238);
+  width: 100%;
+  height: fit-content;
 }
 .toolbox-tab {
   padding-bottom: 4px;
@@ -262,15 +227,29 @@ export default {
   margin-left: 5px;
   margin-top: 6px;
 }
-.toolbox-icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+.toolbox-icon-border {
   margin: 4px;
   margin-top: 0px;
   border-top: 1px solid white;
   border-left: 1px solid white;
   box-shadow: 1px 1px grey;
-  height: 70px;
+  height: auto;
+}
+.toolbox-icons {
+  position: relative;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(25px, auto));
+  grid-auto-rows:minmax(min-content,max-content);
+  /* grid-auto-rows: minmax(5vh,5vh); */
+  margin: 4px;
+  margin-top: 0px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  /* box-shadow: 1px 1px grey; */
+  /* height: 70px; */
+  /* width: 100%;*/
+  height: 100%;
 }
 .toolbox-icon {
   width: 24px;
@@ -303,8 +282,8 @@ img.toolbox-icon:hover {
   transition: 0.5s ease;
   background-color: rgb(8, 130, 211);
 }
-.overlay:focus{
-   background-color: rgb(8, 130, 211); 
+.overlay:focus {
+  background-color: rgb(8, 130, 211);
 }
 
 .container:hover .overlay {
@@ -328,7 +307,8 @@ img.toolbox-icon:hover {
 }
 .closeButton {
   position: relative;
-  right: 10px;
+  right: 0px;
+  float: right;
   cursor: pointer;
 }
 </style>
