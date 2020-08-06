@@ -192,11 +192,12 @@ export default {};
 .outer-toolbox-div {
   border: 0.1px solid gray;
   background-color: rgb(238, 238, 238);
-  /* min-height: 130px; */
+  min-height: 26px;
   box-shadow: 2px 2px lightgrey;
   height: 150px;
-  /* min-width: 220px; */
+  min-width: 26px;
   width: 250px;
+  position: relative;
 }
 .toolbox-header {
   display: grid;
@@ -206,12 +207,13 @@ export default {};
   background-color: white;
 }
 .toolbox-body {
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 6fr; */
+  position: absolute;
   background-color: rgb(238, 238, 238);
   width: 100%;
-  height: fit-content;
+  /* height: fit-content; */
+  bottom: 34px;
+    top: 29px;
+    
 }
 .toolbox-tab {
   padding-bottom: 4px;
@@ -238,6 +240,7 @@ export default {};
 .toolbox-icons {
   position: relative;
   display: grid;
+  overflow: auto;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fill, minmax(25px, auto));
   grid-auto-rows:minmax(min-content,max-content);
@@ -246,7 +249,7 @@ export default {};
   margin-top: 0px;
   border-top: 1px solid white;
   border-left: 1px solid white;
-  /* box-shadow: 1px 1px grey; */
+  box-shadow: 1px 1px grey;
   /* height: 70px; */
   /* width: 100%;*/
   height: 100%;
