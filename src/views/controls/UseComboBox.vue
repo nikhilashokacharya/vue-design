@@ -24,6 +24,7 @@ export default {
 
 <style scoped>
 .buttonIn {
+  margin-top: 165px;
   width: 120px;
   position: relative;
 }

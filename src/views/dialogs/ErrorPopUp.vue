@@ -70,7 +70,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .outer-error-div {
   border: 0.2px solid gray;
   min-width: 252px;

@@ -1,11 +1,10 @@
 <template>
-  <div class="new">
-    <form class="checkbox-form">
-      <div class="form-group">
-        <input class="checkbox-input" type="checkbox" id="html" />
-        <label class="checkbox-label" for="html">CheckBox1</label>
-      </div>
-    </form>
+  <div class="outer">
+    <label class="control">
+      <input type="checkbox" class="control-input visually-hidden" />
+      <span class="control-indicator"></span>
+      <span style="font-size: 12px;">CheckBox1</span>
+    </label>
   </div>
 </template>
 
@@ -14,24 +13,47 @@ export default {};
 </script>
 
 <style scoped>
-.form-group {
-    background-color: rgb(238, 238, 238);
-  padding-top: 5px;
-  box-shadow: -1px -1px gray;
+.outer {
+  position: relative;
+  height: 30px;
   width: 150px;
-  height: 23px;
+  background-color: rgb(238, 238, 238);
+  box-shadow: -1px -1px gray;
+  overflow: hidden;
 }
-.checkbox-input {
-    float: left;
-    
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
-.checkbox-label{
-    float: left;
-    font-size: 11px;
-    padding-top: 5px;
-    /* font-weight: 559; */
+.control {
+  position: absolute;
+  top: 20%;
+  left: 10px;
+  display: inline-flex;
+  align-items: center;
 }
-.checkbox-form{
-    align-content: center;
+.control-indicator {
+  width: 14px;
+  height: 14px;
+  margin: 1px;
+  margin-right: 6px;
+  background-color: white;
+  /* border: 1px solid lightgray; */
+  border: white;
+  box-shadow: -1px -1px grey;
+  /* background-image: url('./checkmark.png'); */
+}
+.control-input:checked ~ .control-indicator {
+  /* background-color: rgb(107, 158, 253); */
+  background-image: url("../../assets/controls pictures/checkmark.png");
+  background-size: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 </style>

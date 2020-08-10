@@ -1,15 +1,7 @@
 <template>
-  <div>
-    <div>
-      <button class="button">
-        <div class="triangle-up"></div>
-      </button>
-    </div>
-    <div>
-      <button class="button">
-        <div class="triangle-down"></div>
-      </button>
-    </div>
+  <div class="spin">
+    <button class="button-element-top"></button>
+    <button class="button-element-bottom"></button>
   </div>
 </template>
 
@@ -18,25 +10,25 @@ export default {};
 </script>
 
 <style scoped>
-.triangle-up {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid black;
+.spin {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 30px;
+  height: 60px;
+}
+.button-element-top {
+  background-image: url("../../assets/controls pictures/triangle-up-img.png");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: lightgrey;
+}
 
-}
-.button {
-  height: 15px;
-  /* border: 1px solid black; */
-  box-shadow: 1px 2px gray;
-  align-items: center;
-}
-.triangle-down {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid black;
+.button-element-bottom {
+  background-image: url("../../assets/controls pictures/triangle-down-img.png");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: lightgrey;
 }
 </style>

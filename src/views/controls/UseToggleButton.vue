@@ -37,6 +37,7 @@ export default {
   height: 60px;
   width: 55px;
   box-shadow: 1px 1px gray;
+  overflow: hidden;
 }
 .span1 {
   outline: dotted 1.5px black;

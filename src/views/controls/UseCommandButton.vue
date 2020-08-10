@@ -1,14 +1,13 @@
 <template>
   <div class="commanddiv">
-    <div class="command-border" v-if="clicked===false" @click="toSelect">
-      <button class="commandbutton">CommandButton1</button>
-    </div>
-    <div class="command-border" v-else @click="toSelect">
-      <a class="span4">
-        <a class="span3">
-          <a class="span2">
-            <a class="span1">
-              <button class="commandbutton">CommandButton1</button>
+    <div class="command-border" @click="toSelect">
+      <a :class="isActive&&'span4'">
+        <a :class="isActive&&'span3'">
+          <a :class="isActive&&'span2'">
+            <a :class="isActive&&'span1'">
+              <button class="commandbutton"
+              
+              >CommandButton1</button>
             </a>
           </a>
         </a>
@@ -21,12 +20,12 @@
 export default {
   data() {
     return {
-      clicked: false
+      isActive: false,
     };
   },
   methods: {
     toSelect() {
-      this.clicked = !this.clicked;
+      this.isActive = true;
     }
   }
 };
@@ -38,6 +37,7 @@ export default {
   height: 35px;
   border: none;
   box-shadow: 2px 2px gray;
+  overflow: hidden;
 }
 .span1 {
   outline: dotted 1.5px black;

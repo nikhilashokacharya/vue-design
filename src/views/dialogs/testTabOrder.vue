@@ -17,7 +17,22 @@
         <div class="wrapper1">
           <span class="inner-header">Tab Order</span>
           <div class="frame">
-            <button class="inside-frame" v-for="value in values" :key="value">{{value}}</button>
+            <div v-if="controls"></div>
+            <button
+              class="inside-frame"
+              v-for="(value,key,index) in controls"
+              :key="value.tabindex"
+              :tabindex="parseInt(value.tabindex)"
+              @click="check(index)"
+              :mini="value.tabindex"
+            >
+            <div>
+              <div>
+                {{value.name}}:{{value.tabindex}}
+              </div>
+            </div>
+            </button>
+           
           </div>
         </div>
         <div class="wrapper2">
@@ -29,7 +44,10 @@
           <div style="height:35px"></div>
           <div class="wrapper21">
             <button class="taborder-buttons">Move Up</button>
-            <button class="taborder-buttons">Move Down</button>
+            <button
+              class="taborder-buttons"
+              @click="increaseIndex(selectedIndex,controls)"
+            >Move Down</button>
           </div>
         </div>
       </div>
@@ -41,19 +59,63 @@
 export default {
   data() {
     return {
-      values: [
-        "control1",
-        "control2",
-        "control3",
-        "control4",
-        "control5",
-        "control6",
-        "control7",
-        "control8",
-        "control9",
-        "control10",
-      ],
+      array1:[],
+      selectedIndex: 1,
+      i: 0,
+      controls: {
+        ID_LABEL1: {
+          name: "Label1",
+          tabindex: 0,
+        },
+        ID_COMMANDBUTTON1: {
+          name: "CommandButton1",
+          tabindex: 1,
+        },
+        ID_TEXTBOX1: {
+          name: "TextBox1",
+          tabindex: 2,
+        },
+      },
     };
+  },
+  filters:{
+    // sortByIndex: function (){
+      
+    // }
+  },
+  methods: {
+    check(data) {
+      console.log(data);
+      this.selectedIndex = data;
+    },
+    increaseIndex(selectedIndex, values) {
+      this.selectedIndex = selectedIndex + 1;
+      console.log(this.selectedIndex);
+      const b = this.controls;
+      this.controls[selectedIndex + 1] = this.controls[selectedIndex];
+      this.values[selectedIndex] = b;
+    },
+
+    // increaseIndex(selectedIndex, values) {
+    //   this.selectedIndex = selectedIndex+1;
+    //   // console.log(this.selectedIndex);
+    //   // let i;
+    //   // for(i;i<this.values.length;i++){
+    //   const b = this.values[selectedIndex+1];
+    //   this.values[selectedIndex+1] = this.values[selectedIndex];
+    //   this.values[selectedIndex] = b;
+    //   // }
+    // },
+    // decreaseIndex(selectedIndex, values) {
+    //   this.selectedIndex = selectedIndex-1;
+    //   // console.log(this.selectedIndex);
+    //   // let i;
+    //   // for(i;i<this.values.length;i++){
+    //   const b = this.values[selectedIndex-1];
+    //   this.values[selectedIndex-1] = this.values[selectedIndex];
+    //   this.values[selectedIndex] = b;
+    //   // }
+    // },
   },
 };
 </script>
