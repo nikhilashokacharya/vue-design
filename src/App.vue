@@ -2,9 +2,9 @@
   <div id="app">
     <!-- <testControlContextMenu2 />
     <hr> -->
-    <!-- <UseLabel />
-    <hr /> -->
-    <!-- <UseCheckBox />
+    <UseLabel />
+    <hr />
+     <UseCheckBox />
     <hr />
     <UseComboBox />
     <hr />
@@ -21,8 +21,7 @@
     <hr />
     <UsePicture />
     <hr />
-    <UseRefEdit />
-    <hr />
+    
     <UseScroll />
     <hr />
     <UseSpinButton />
@@ -33,7 +32,7 @@
     <hr />
     <UseToggleButton />
     <hr />
-    <hr /> -->
+  <!--  <hr /> -->
     <!-- <testControlContextMenu4 />
     <hr>
     <testControlContextMenu3 />
@@ -42,12 +41,12 @@
     <hr /> 
     <UserformContextMenu />
     <hr> -->
-    <tabOrderModal />
+    <!-- <tabOrderModal />
     <hr>
-    <ErrorPopUp />
+    <ErrorPopUp />-->
     <hr>
-    <ToolBox />
-    <hr>
+    <!-- <ToolBox /> 
+    <hr> -->
     <!-- <UserFormDesign />
     <hr> -->
     <!-- <ColorPallate /> -->
@@ -82,7 +81,7 @@ import ControlContextMenu from "./views/contextMenu/ControlContextMenu.vue";
 import UserformContextMenu from "./views/contextMenu/UserformContextMenu.vue";
 import ErrorPopUp from './views/dialogs/ErrorPopUp.vue'
 // import testControlContextMenu2 from "./views/test/testControlContextMenu2.vue";
-// import testTabOrder from './views/test/testTabOrder.vue';
+import testTabOrder from './views/dialogs/testTabOrder.vue';
 import testControlContextMenu3 from './views/test/testControlContextMenu3.vue';
 // import testControlContextMenu4 from './views/test/testControlContextMenu4.vue';
 import TabOrderModal from './views/dialogs/TabOrderModal.vue'
@@ -111,7 +110,7 @@ import UserFormDesign from './views/dialogs/UserFormDesign.vue'
     ControlContextMenu,
     UserformContextMenu,
     // testControlContextMenu2,
-    // testTabOrder,
+    testTabOrder,
     testControlContextMenu3,
     // testControlContextMenu4,
     TabOrderModal,
@@ -125,5 +124,5 @@ import UserFormDesign from './views/dialogs/UserFormDesign.vue'
 export default class App extends Vue {}
 </script>
 
-<style>
+<style scoped>
 </style>
