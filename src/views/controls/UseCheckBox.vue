@@ -1,5 +1,5 @@
 <template>
-  <div class="outer">
+  <div class="outer-check">
     <label class="control">
       <input type="checkbox" class="control-input visually-hidden" />
       <span class="control-indicator"></span>
@@ -13,7 +13,7 @@ export default {};
 </script>
 
 <style scoped>
-.outer {
+.outer-check {
   position: relative;
   height: 30px;
   width: 150px;

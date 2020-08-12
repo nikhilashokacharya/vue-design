@@ -1,9 +1,10 @@
 <template>
-  <div class="container">
-    <div class="radio">
-      <input id="radio-1" name="radio" type="radio" class="radio-input"/>
-      <label for="radio-1" class="radio-label">OptionButton1</label>
-    </div>
+  <div class="outer-option">
+    <label class="control">
+      <input type="radio" class="control-input visually-hidden" />
+      <span class="control-indicator"></span>
+      <span style="font-size:13px">OptionButton</span>
+    </label>
   </div>
 </template>
 
@@ -12,23 +13,52 @@ export default {};
 </script>
 
 <style scoped>
-.radio {
-  background-color: rgb(238, 238, 238);
-  /* border: 0.2px solid gray; */
-  box-shadow: -1px -1px gray;
+.outer-option {
+  position: relative;
+  height: 30px;
   width: 150px;
-  height: 23px;
+  background-color: rgb(238, 238, 238);
+  box-shadow: -1px -1px gray;
+  overflow: hidden;
 }
-.radio-input {
-    float: left;
-    /* padding-top:5px; */
-    margin-top: 5px;
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
-.radio-label{
-    float: left;
-    font-size: 11px;
-    padding-top: 5px;
-    /* font-weight: 550; */
+.control {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 10px;
+}
+.control-indicator {
+  width: 10px;
+  height: 10px;
+  /* margin: 1px; */
+  margin-right: 6px;
+  /* border: 1px solid black; */
+  box-shadow: -1px -1px grey;
+  border-radius: 14px;
+  background-color: white;
+  /* background-image: url('./checkmark.png'); */
+}
+/* .control-input:hover ~ .control-indicator {
+        background-color: rgb(184, 209, 255);
+    } */
+.control-input:checked ~ .control-indicator {
+  /* background-color: rgb(107, 158, 253); */
+  background-image: url("../../assets/controls pictures/optionmark-img.png");
+  background-size: 5px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 </style>
