@@ -22,8 +22,8 @@
     <UsePicture />
     <hr />
     
-    <!-- <UseScroll />
-    <hr /> -->
+    <UseScroll />
+    <hr />
     <UseSpinButton />
     <hr />
     <UseTabStrip />
