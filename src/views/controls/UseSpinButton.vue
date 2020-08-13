@@ -1,24 +1,35 @@
 <template>
-  <div class="spin" :style="spinStyle" @click="handleClick">
-    <button class="button-element-top"></button>
-    <button class="button-element-bottom"></button>
+<div>
+  <div v-if="spinStyle.width<=spinStyle.height">
+    <div class="spin" :style="spinStyle" >
+      <button class="button-element-top"></button>
+      <button class="button-element-bottom"></button>
+    </div>
   </div>
+  <div v-else>
+    <div class="spin" :style="spinStyle1" >
+      <button class="button-element-top"></button>
+      <button class="button-element-bottom"></button>
+    </div>
+  </div>
+</div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 @Component({
-  components: {}
+  components: {},
 })
 export default class UseSpinButton extends Vue {
-  spinStyle={width: '30px',
-  height: '60px',
-  transform:'rotate(0deg)'}
-  handleClick(){
-    this.spinStyle.width='61px';
-    if(this.spinStyle.width>this.spinStyle.height){
-      this.spinStyle.transform='rotate(90deg)';
-    }
+  spinStyle = {
+    width: "61px",
+    height: "60px",
+    transform: "rotate(0deg)",
+  };
+  spinStyle1 = {
+    width: "61px",
+    height: "60px",
+    transform: "rotate(90deg)"
   }
 }
 </script>

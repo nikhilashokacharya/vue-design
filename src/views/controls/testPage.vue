@@ -1,11 +1,11 @@
 <template>
-  <div class="outer" :style="outerArea">
-    <div class="tabs">
+  <div class="outer-page" :style="outerArea">
+    <div class="pages">
       <div id="container" class="move" ref="scrolling">
-        <div class="tab" v-for="(value,key) in values" :key="key">
-          <input name="tab-group-1" :id="value.id" type="radio" />
+        <div class="page" v-for="(value,key) in values" :key="key">
+          <input name="page-group-1" :id="value.id" type="radio" />
           <label :for="value.id">{{value.tabLabel}}</label>
-          <div class="content">{{value.tabContent}}</div>
+          <div class="content"><UseLabel v-if="value.tabContent==='Label'"/><UseToggleButton v-if="value.tabContent==='ToggleButton'"/><UseOptionButton v-if="value.tabContent==='OptionButton'"/></div>
         </div>
       </div>
       <div></div>
@@ -19,43 +19,31 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
+import UseLabel from './UseLabel.vue';
+import UseOptionButton from './UseOptionButton.vue';
+import UseToggleButton from './UseToggleButton.vue'
 @Component({
-  components: {},
+  components: {UseLabel,UseToggleButton,UseOptionButton},
 })
 export default class InsertElement extends Vue {
     isScroll=true
-    outerArea={width: '340px',
+    outerArea={width: '485px',
   height: '140px'}
   values = [
     {
-      id: "tab-1",
-      tabLabel: "Tab One",
-      tabContent: "Content 1",
+      id: "page-1",
+      tabLabel: "Page One",
+      tabContent: "Label"
     },
     {
-      id: "tab-2",
-      tabLabel: "Tab Two",
-      tabContent: "Content 2",
+      id: "page-2",
+      tabLabel: "Page Two",
+      tabContent: "ToggleButton",
     },
     {
-      id: "tab-3",
-      tabLabel: "Tab Three",
-      tabContent: "Content 3",
-    },
-    {
-      id: "tab-4",
-      tabLabel: "Tab Four",
-      tabContent: "Content 4",
-    },
-    {
-      id: "tab-5",
-      tabLabel: "Tab Five",
-      tabContent: "Content 5",
-    },
-    {
-      id: "tab-6",
-      tabLabel: "Tab Six",
-      tabContent: "Content 6",
+      id: "page-3",
+      tabLabel: "Page Three",
+      tabContent: "OptionButton",
     },
   ];
 
@@ -78,12 +66,12 @@ export default class InsertElement extends Vue {
 </script>
 
 <style scoped>
-.outer {
+.outer-page {
   background-color: rgb(238, 238, 238);
   overflow-y: hidden;
   overflow-x: hidden;
 }
-.tabs {
+.pages {
   display: grid;
   grid-template-columns: 1fr 40px 30px;
   position: relative;
@@ -135,15 +123,15 @@ export default class InsertElement extends Vue {
   overflow-x: auto;
   overflow-y: hidden;
 }
-.tab {
+.page {
   display: inline-block;
   vertical-align: top;
   z-index: 1;
 }
-.scroll-tab {
+.scroll-page {
   z-index: 2;
 }
-.tab label {
+.page label {
   border: 0.1px solid white;
   background-color: rgb(238, 238, 238);
   display: inline-block;
@@ -152,7 +140,7 @@ export default class InsertElement extends Vue {
   cursor: pointer;
   position: relative;
 }
-.tab [type="radio"] {
+.page [type="radio"] {
   display: none;
 }
 ::-webkit-scrollbar {
@@ -198,12 +186,19 @@ export default class InsertElement extends Vue {
         border-right-color: gray;
         border-bottom-color: gray;
     } */
-.tab .content {
+.page .content {
   position: absolute;
   white-space: normal;
   top: 23px;
   left: 0px;
-  background: rgb(238, 238, 238);
+  /* background: rgb(238, 238, 238); */
+  background-color: white;
+  background-size: 9px 10px;
+  background-image: radial-gradient(
+    circle,
+    rgb(0, 0, 0) 0.5px,
+    rgba(0, 0, 0, 0) 0.2px
+  );
   height: 100px;
   right: 0;
   bottom: 0;
@@ -214,13 +209,13 @@ export default class InsertElement extends Vue {
   border: 0.1px solid white;
   box-shadow: 2px 1px gray;
 }
-.tab [type="radio"]:checked ~ label {
+.page [type="radio"]:checked ~ label {
   border-right: 2px solid gray;
   border-bottom: none;
   border-radius: 3px;
   z-index: 2;
 }
-.tab [type="radio"]:checked ~ label ~ .content {
+.page [type="radio"]:checked ~ label ~ .content {
   z-index: 1;
 }
 .content {

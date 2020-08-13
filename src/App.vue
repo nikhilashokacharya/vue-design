@@ -4,6 +4,8 @@
     <hr> -->
     <testTab />
     <hr>
+    <testPage />
+    <hr>
     <UseLabel />
     <hr />
      <UseCheckBox />
@@ -91,10 +93,13 @@ import PopUpTutorial from './views/dialogs/Pop-up-tutorial.vue'
 import ColorPallate from './table-design/ColorPallate.vue'
 import ToolBox from './views/dialogs/ToolBox.vue'
 import UserFormDesign from './views/dialogs/UserFormDesign.vue'
+import testPage from './views/controls/testPage.vue'
+
 
 @Component({
   components: {
     testTab,
+    testPage,
     UseCheckBox,
     UseComboBox,
     UseCommandButton,
