@@ -17,7 +17,6 @@ export default class UseSpinButton extends Vue {
   handleClick(){
     this.spinStyle.width='61px';
     if(this.spinStyle.width>this.spinStyle.height){
-
       this.spinStyle.transform='rotate(90deg)';
     }
   }

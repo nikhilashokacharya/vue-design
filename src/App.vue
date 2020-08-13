@@ -2,6 +2,8 @@
   <div id="app">
     <!-- <testControlContextMenu2 />
     <hr> -->
+    <testTab />
+    <hr>
     <UseLabel />
     <hr />
      <UseCheckBox />
@@ -64,7 +66,7 @@ import UseComboBox from "./views/controls/UseComboBox.vue";
 import UseCommandButton from "./views/controls/UseCommandButton.vue";
 import UseFrame from "./views/controls/UseFrame.vue";
 import UseLabel from "./views/controls/UseLabel.vue";
-
+import testTab from './views/controls/testTab.vue';
 import UseListBox from "./views/controls/UseListBox.vue";
 import UseMultiPage from "./views/controls/UseMultiPage.vue";
 import UseOptionButton from "./views/controls/UseOptionButton.vue";
@@ -92,6 +94,7 @@ import UserFormDesign from './views/dialogs/UserFormDesign.vue'
 
 @Component({
   components: {
+    testTab,
     UseCheckBox,
     UseComboBox,
     UseCommandButton,

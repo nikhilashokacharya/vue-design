@@ -6,37 +6,35 @@
         <label for="page-1">Page1</label>
         <div class="content1">
           <UseCommandButton />
-          <!-- <UseCheckBox /> -->
         </div>
       </div>
       <div class="page">
         <input type="radio" id="page-2" name="page-group-2" />
         <label for="page-2">Page2</label>
-        
+
         <div class="content1">
           <div>
-          <!-- <UseOptionButton /> -->
-          <UseCheckBox />
+            <UseCheckBox />
           </div>
-          </div>
+        </div>
       </div>
+      <a href="#page-1"></a><a href="#page-2"></a>
     </div>
   </div>
 </template>
 
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import UseCommandButton from './UseCommandButton.vue';
+import { Component, Prop, Vue } from "vue-property-decorator";
+import UseCommandButton from "./UseCommandButton.vue";
 // import UseOptionButton from './UseOptionButton.vue';
-import UseCheckBox from './UseCheckBox.vue'
+import UseCheckBox from "./UseCheckBox.vue";
 
 @Component({
   components: {
     UseCommandButton,
     // UseOptionButton,
-    UseCheckBox
-
+    UseCheckBox,
   },
 })
 export default class UseMultiPage extends Vue {}
@@ -47,7 +45,7 @@ export default class UseMultiPage extends Vue {}
   position: absolute;
   /* border: 1px solid black; */
   background-color: rgb(238, 238, 238);
-  width: calc(100% - 396px);
+  width: 303px;
   height: calc(100% - 30px);
   overflow: hidden;
 }
@@ -80,7 +78,11 @@ export default class UseMultiPage extends Vue {}
   /* background: transparent; */
   background-color: white;
   background-size: 9px 10px;
-  background-image: radial-gradient(circle, rgb(0, 0, 0) 0.5px, rgba(0, 0, 0, 0) 0.2px);
+  background-image: radial-gradient(
+    circle,
+    rgb(0, 0, 0) 0.5px,
+    rgba(0, 0, 0, 0) 0.2px
+  );
   width: calc(100% - 42px);
   height: calc(100% - 60px);
   padding: 20px;
@@ -88,7 +90,7 @@ export default class UseMultiPage extends Vue {}
   border-top: 0.1px solid white;
   border-radius: 1px;
   box-shadow: 1px 1px grey;
-      overflow: hidden;
+  overflow: hidden;
 }
 [type="radio"]:checked ~ label {
   background: ccc;
