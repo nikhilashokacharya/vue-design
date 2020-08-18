@@ -1,71 +1,65 @@
 <template>
-  <div class="outer" :style="outerArea">
-    <div class="tabs">
-      <div id="container" class="move" ref="scrolling">
-        <div class="tab" v-for="(value,key) in values" :key="key">
-          <input name="tab-group-1" :id="value.id" type="radio" />
-          <label :for="value.id">{{value.tabLabel}}</label>
-          <div class="content">{{value.tabContent}}</div>
+    <div class="outer" :style="outerArea">
+      <div class="tabs">
+        <div id="container" class="move" ref="scrolling">
+          <div class="tab" v-for="(value,key) in values" :key="key">
+            <input
+              name="tab-group-1"
+              :id="value.id"
+              type="radio"
+              :checked="value.checked"
+              @click="clickedTab(value)"
+            />
+            <label :v-model="value.title" :for="value.id" :title="value.title">{{value.tabLabel}}</label>
+            <div class="content">{{value.tabContent}}</div>
+          </div>
+        </div>
+        <div></div>
+        <div :style="{display:isScroll?'block':'none'}">
+          <button class="left-button" @click="leftmove"></button>
+          <button class="right-button" @click="rightmove"></button>
         </div>
       </div>
-      <div></div>
-      <div :style="{display:isScroll?'block':'none'}">
-        <button class="left-button" @click="leftmove"></button>
-        <button class="right-button" @click="rightmove"></button>
-      </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts">
+import { EventBus } from "../../components/event-bus";
 import { Component, Vue, Prop } from "vue-property-decorator";
 @Component({
   components: {},
 })
 export default class InsertElement extends Vue {
-    isScroll=true
-    outerArea={width: '340px',
-  height: '140px'}
+  counter = 3;
+  isScroll = true;
+  title = "";
+  outerArea = {
+    width: "284px",
+    height: "140px",
+  };
   values = [
     {
       id: "tab-1",
-      tabLabel: "Tab One",
-      tabContent: "Content 1",
+      tabLabel: "Tab1",
+      checked: false,
+      title: "",
+      index:0
     },
     {
       id: "tab-2",
-      tabLabel: "Tab Two",
-      tabContent: "Content 2",
-    },
-    {
-      id: "tab-3",
-      tabLabel: "Tab Three",
-      tabContent: "Content 3",
-    },
-    {
-      id: "tab-4",
-      tabLabel: "Tab Four",
-      tabContent: "Content 4",
-    },
-    {
-      id: "tab-5",
-      tabLabel: "Tab Five",
-      tabContent: "Content 5",
-    },
-    {
-      id: "tab-6",
-      tabLabel: "Tab Six",
-      tabContent: "Content 6",
+      tabLabel: "Tab2",
+      checked: false,
+      title: "",
+      index:1
     },
   ];
 
   leftmove() {
     const scrollRef = (this as any).$refs.scrolling;
-    console.log(scrollRef.scrollWidth+30);
+    console.log(scrollRef.scrollWidth + 30);
     scrollRef.scrollLeft -= 20;
-    if(scrollRef.scrollWidth+30>=parseInt(this.outerArea.width)){
-        // console.log('no Scroll');
-        this.isScroll=false
+    if (scrollRef.scrollWidth + 30 <= parseInt(this.outerArea.width)) {
+      this.isScroll = false;
     }
   }
   rightmove() {
@@ -73,6 +67,77 @@ export default class InsertElement extends Vue {
     const scrollRef = (this as any).$refs.scrolling;
     console.log(scrollRef);
     scrollRef.scrollLeft += 20;
+  }
+  mounted() {
+    const ele = this.values;
+    ele[0].checked = true;
+
+    EventBus.$on("addTab", () => {
+      this.add();
+    });
+    EventBus.$on("delTab", () => {
+      this.del();
+    });
+    EventBus.$on("rename", (renameValue: any) => {
+      this.rename(renameValue);
+    });
+    EventBus.$on("tip", (titleValue: any) => {
+      this.toolTip(titleValue);
+    });
+    EventBus.$on("Okayed", (newArray: any) => {
+      this.values=newArray;
+    });
+  }
+  add() {
+    this.values.forEach((x) => {
+      x.checked = false;
+    });
+    const newCounter = this.counter++;
+    this.values = [
+      ...this.values,
+      { id: `tab-${newCounter}`, tabLabel: `Tab ${newCounter}`, checked: true, index: `${newCounter-1}`},
+    ];
+    console.log(this.values);
+  }
+  del() {
+    console.log(this.values.length);
+    const ele = this.values;
+    for (let i = 0; i < this.values.length; i++) {
+      if (ele[i].checked) {
+        const x = this.values.splice(i, 1);
+        console.log(x);
+        ele[this.values.length - 1].checked = true;
+      }
+    }
+  }
+  clickedTab(data: any) {
+    EventBus.$emit("tabOrderData", this.values);
+    this.values.forEach((x) => {
+      if (data.id === x.id) {
+        x.checked = true;
+        EventBus.$emit("renameTabs", data);
+      } else {
+        x.checked = false;
+      }
+    });
+  }
+  rename(renameValue: any) {
+    const ele = this.values;
+    for (let i = 0; i < this.values.length; i++) {
+      if (ele[i].checked) {
+        console.log(ele[i]);
+        ele[i].tabLabel = renameValue;
+      }
+    }
+  }
+  toolTip(titleValue: any) {
+    const ele = this.values;
+    for (let i = 0; i < this.values.length; i++) {
+      if (ele[i].checked) {
+        console.log(this.title);
+        ele[i].title = titleValue;
+      }
+    }
   }
 }
 </script>
@@ -102,9 +167,11 @@ export default class InsertElement extends Vue {
   background-size: 30%;
   background-position: center;
   background-repeat: no-repeat;
-  border: 1px solid gray;
+  border: 2px solid white;
+  border-right-color: gray;
+  border-bottom-color: gray;
   top: 3px;
-  right: 19px;
+  right: 15px;
   width: 22px;
   height: 18px;
   padding: 0;
@@ -118,9 +185,11 @@ export default class InsertElement extends Vue {
   background-size: 30%;
   background-position: center;
   background-repeat: no-repeat;
-  border: 1px solid gray;
+  border: 2px solid white;
+  border-right-color: gray;
+  border-bottom-color: gray;
   top: 3px;
-  right: 19px;
+  right: 15px;
   width: 22px;
   height: 18px;
   padding: 0;

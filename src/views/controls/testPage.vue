@@ -2,8 +2,8 @@
   <div class="outer-page" :style="outerArea">
     <div class="pages">
       <div id="container" class="move" ref="scrolling">
-        <div class="page" v-for="(value,key) in values" :key="key">
-          <input name="page-group-1" :id="value.id" type="radio" />
+        <div class="page" v-for="(value,key) in values" :key="key" >
+          <input name="page-group-1" :id="value.id" type="radio" ref="check1"/>
           <label :for="value.id">{{value.tabLabel}}</label>
           <div class="content"><UseLabel v-if="value.tabContent==='Label'"/><UseToggleButton v-if="value.tabContent==='ToggleButton'"/><UseOptionButton v-if="value.tabContent==='OptionButton'"/></div>
         </div>
@@ -62,7 +62,13 @@ export default class InsertElement extends Vue {
     console.log(scrollRef);
     scrollRef.scrollLeft += 20;
   }
-}
+  // mounted(){
+  //   const ele = document.getElementsByName("page-group-1");
+  //   console.log(ele);
+  //   ele[0].checked = true;
+  // }
+  }
+
 </script>
 
 <style scoped>
@@ -135,7 +141,7 @@ export default class InsertElement extends Vue {
   border: 0.1px solid white;
   background-color: rgb(238, 238, 238);
   display: inline-block;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 1px 5px;
   margin: 0;
   cursor: pointer;
   position: relative;

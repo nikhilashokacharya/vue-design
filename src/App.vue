@@ -3,7 +3,10 @@
     <!-- <testControlContextMenu2 />
     <hr> -->
     <testTab />
-    <hr>
+    <!-- <hr> -->
+    <RenameMultiPageDialog />
+    <!-- <hr> -->
+    <!-- 
     <testPage />
     <hr>
     <UseLabel />
@@ -35,7 +38,7 @@
     <UseTextBox />
     <hr />
     <UseToggleButton />
-    <hr />
+    <hr /> -->
   <!--  <hr /> -->
     <!-- <testControlContextMenu4 />
     <hr>
@@ -45,10 +48,11 @@
     <hr /> 
     <UserformContextMenu />
     <hr> -->
-    <!-- <tabOrderModal />
+     <!--<tabOrderModal />
+     
     <hr>
     <ErrorPopUp />-->
-    <hr>
+    <!-- <hr> -->
     <!-- <ToolBox /> 
     <hr> -->
     <!-- <UserFormDesign />
@@ -57,6 +61,9 @@
     <!-- <testTabOrder /> -->
     <!-- <hr>
     <Pop-up-tutorial /> -->
+    <!-- <FontDialog /> -->
+    <TabStripContextMenu />
+    <TabStripTabOrderModal />
     <div style="margin-bottom:100px"></div>
   </div>
 </template>
@@ -74,7 +81,7 @@ import UseMultiPage from "./views/controls/UseMultiPage.vue";
 import UseOptionButton from "./views/controls/UseOptionButton.vue";
 import UsePicture from "./views/controls/UsePicture.vue";
 import UseRefEdit from "./views/controls/UseRefEdit.vue";
-
+import TabStripTabOrderModal from "./views/dialogs/TabStripTabOrderModal.vue"
 import UseScroll from "./views/controls/UseScroll.vue";
 import UseSpinButton from "./views/controls/UseSpinButton.vue";
 import UseTabStrip from "./views/controls/UseTabStrip.vue";
@@ -93,7 +100,10 @@ import PopUpTutorial from './views/dialogs/Pop-up-tutorial.vue'
 import ColorPallate from './table-design/ColorPallate.vue'
 import ToolBox from './views/dialogs/ToolBox.vue'
 import UserFormDesign from './views/dialogs/UserFormDesign.vue'
-import testPage from './views/controls/testPage.vue'
+import testPage from './views/controls/testPage.vue';
+import TabStripContextMenu from './views/contextMenu/TabStripContextMenu.vue';
+import FontDialog from "./table-design/FontDialog.vue";
+import RenameMultiPageDialog from "./views/dialogs/RenameMultiPageDialog.vue";
 
 
 @Component({
@@ -126,7 +136,11 @@ import testPage from './views/controls/testPage.vue'
     PopUpTutorial,
     ColorPallate,
     ToolBox,
-    UserFormDesign
+    UserFormDesign,
+    TabStripContextMenu,
+    FontDialog,
+    RenameMultiPageDialog,
+    TabStripTabOrderModal
   }
 })
 export default class App extends Vue {}

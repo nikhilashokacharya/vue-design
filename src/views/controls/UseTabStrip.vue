@@ -31,14 +31,7 @@ export default class UseTabStrip extends Vue {
           id: "tab-3",
           tabLabel: "Tab Three",
           tabContent: "Are",
-        },
-        // {
-        //   id: "tab-4",
-        //   tabLabel: "Tab Four",
-        //   tabContent: "You",
-        // },
-        // { id: "tab-5", tabLabel: "Tab Five", tabContent: "Content Five" },
-        // { id: "tab-6", tabLabel: "Tab Six", tabContent: "Content Six" },
+        }
       ]
     }
   
