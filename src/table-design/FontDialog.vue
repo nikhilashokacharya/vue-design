@@ -1,18 +1,29 @@
 <template>
   <div>
-    <!-- <div class="box">
-      <a href="#popup1">
-        <button>...</button>
+    <div class="box grid-design">
+      <input type="text" id="enter" class="font-input"/>
+      <a href="#popup12">
+        <button :style="{height: '17px',
+    padding: '0px',
+    paddingLeft: '1px',
+    paddingRight: '2px',
+    border: '1px solid white',
+    borderRightColor: 'gray',
+    borderBottomColor: 'gray',
+    borderLeftColor: 'lightgray',
+    borderTopColor: 'lightgray',
+    outline: 'none',
+    marginLeft: '-3px'}">...</button>
       </a>
-    </div> -->
-    <div id="popup1" class="overlay" :style="{visibility:(isOpen===true)?'visible':'hidden',opacity:(isOpen===true)?'1':'0'}">
+    </div>
+    <div id="popup12" class="overlay">
       <div class="font-div popup">
         <div class="font-header">
           <span class="span-style">Font</span>
           <!-- <button style="float:right">X</button> -->
-          <a  class="close" href="#">
+          <a class="close" href="#">
             <!-- <button style="float:right;position:absolute">&times;</button> -->
-            <button class="ui-btn close" @click="closeme">
+            <button class="ui-btn close">
               <svg viewBox="0 0 10 10">
                 <polygon
                   points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"
@@ -511,22 +522,17 @@
   </div>
 </template>
 
-<script lang="ts">
-import { EventBus } from "../components/event-bus";
-import { Component, Vue } from "vue-property-decorator";
-@Component({
-  components: {
-  },
-})
-export default class UseTabStrip extends Vue {
-      isOpen=false
-      size= 8
-      font= "Arial"
-      fontStyle= "Regular"
-      dataDecorator= ""
+<script>
+export default {
+  data() {
+    return {
+      size: 8,
+      font: "Arial",
+      fontStyle: "Regular",
+      dataDecorator: "",
       //   hello:"40px",
-      size1= [8, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48, 72]
-      testFont1= [
+      size1: [8, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48, 72],
+      testFont1: [
         "Cambria",
         "Comic Sans MS",
         "Consolas",
@@ -545,8 +551,8 @@ export default class UseTabStrip extends Vue {
         "Times New Roman",
         "Trebuchet MS",
         "Verdana",
-      ]
-      testFont2= [
+      ],
+      testFont2: [
         "Cambria Math",
         "Courier",
         "Fixedsys",
@@ -589,23 +595,26 @@ export default class UseTabStrip extends Vue {
         "Terminal",
         "Webdings",
         "Wingdings",
-      ]
-      testFont3= ["Calibri", "Candara", "Corbel"]
-    sizeValue(data: any) {
+      ],
+      testFont3: ["Calibri", "Candara", "Corbel"],
+    };
+  },
+  methods: {
+    sizeValue(data) {
       this.size = data;
       console.log(this.size);
-    }
-    fontValue(data: any) {
+    },
+    fontValue(data) {
       this.font = data;
       console.log(this.font);
-    }
-    styleValue(data: any) {
+    },
+    styleValue(data) {
       this.fontStyle = data;
       console.log(this.fontStyle);
-    }
+    },
     myFunction() {
-      const checkBox1: any= document.getElementById("checkbox1");
-      const checkBox2: any= document.getElementById("checkbox2");
+      const checkBox1 = document.getElementById("checkbox1");
+      const checkBox2 = document.getElementById("checkbox2");
 
       if (checkBox1.checked === true && checkBox2.checked === true) {
         this.dataDecorator = "underline line-through";
@@ -616,20 +625,9 @@ export default class UseTabStrip extends Vue {
       } else {
         this.dataDecorator = "";
       }
-    }
-    openDialog(){
-    this.isOpen=true;
-  }
-  closeme(){
-    this.isOpen=false;
-  }
-  // mounted(){
-  //   EventBus.$on('callRename',()=>{
-  //     this.isOpen=true;
-  //     console.log('Inside Mounted')
-  //   });
-  // }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -639,7 +637,11 @@ body {
   background-size: cover;
   height: 100vh;
 }
-
+.font-input{
+  border: none;
+  outline: none;
+  height: 14px;
+}
 h1 {
   text-align: center;
   font-family: Tahoma, Arial, sans-serif;
@@ -654,13 +656,9 @@ h1 {
 }
 
 .box {
-  /* width: 40%; */
-  /* margin: 0 auto; */
+  display: grid;
+  grid-template-columns: 90% 10%;
   background: rgba(255, 255, 255, 0.2);
-  /* padding: 35px; */
-  /* border: 2px solid #fff; */
-  /* border-radius: 20px/50px; */
-  /* background-clip: padding-box; */
   text-align: right;
 }
 

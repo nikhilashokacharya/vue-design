@@ -10,16 +10,15 @@
               :checked="value.checked"
               @click="clickedTab(value)"
             />
-            
-            <label :v-model="value.title" :for="value.id" :title="value.title" v-html="value.tabLabel"><br></label>
+            <label :v-model="value.title" :for="value.id" :title="value.title" v-html="value.tabLabel"></label>
             <div class="content">{{value.tabContent}}</div>
           </div>
         </div>
         <div></div>
-        <!-- <div :style="{display:isScroll?'block':'none'}">
+        <div :style="{display:isScroll?'block':'none'}">
           <button class="left-button" @click="leftmove"></button>
           <button class="right-button" @click="rightmove"></button>
-        </div> -->
+        </div>
       </div>
     </div>
 </template>
@@ -150,8 +149,8 @@ export default class InsertElement extends Vue {
   overflow-x: hidden;
 }
 .tabs {
-  /* display: grid;
-  grid-template-columns: 1fr 40px 30px; */
+  display: grid;
+  grid-template-columns: 1fr 40px 30px;
   position: relative;
   clear: both;
   margin: 0;
@@ -201,14 +200,12 @@ export default class InsertElement extends Vue {
 .move {
   height: -webkit-fill-available;
   width: 100%;
-  /* display: inline-block; */
+  display: inline-block;
   overflow-x: auto;
   overflow-y: hidden;
-  /* transform: rotate(90deg); */
-  float: right;
 }
 .tab {
-  display: block;
+  display: inline-block;
   vertical-align: top;
   z-index: 1;
 }
@@ -223,8 +220,6 @@ export default class InsertElement extends Vue {
   margin: 0;
   cursor: pointer;
   position: relative;
-  width:30px;
-  right:-240px;
 }
 .tab [type="radio"] {
   display: none;
@@ -275,7 +270,7 @@ export default class InsertElement extends Vue {
 .tab .content {
   position: absolute;
   white-space: normal;
-  top: 0px;
+  top: 23px;
   left: 0px;
   background: rgb(238, 238, 238);
   height: 100px;
@@ -283,8 +278,8 @@ export default class InsertElement extends Vue {
   bottom: 0;
   padding: 20px;
   padding-right: 10px;
-  width: calc(100% - 75px);
-  height: calc(100% - 66px);
+  width: calc(100% - 35px);
+  height: calc(100% - 89px);
   border: 0.1px solid white;
   box-shadow: 2px 1px gray;
 }

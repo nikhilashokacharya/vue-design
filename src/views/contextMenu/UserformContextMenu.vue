@@ -4,7 +4,8 @@
       <div class="wrapper-context">
         <button class="wrapper1-context">
           <div>
-            <i style="font-size:15px" class="fa">&#xf07b;</i>
+            <!-- <i style="font-size:15px" class="fa">&#xf07b;</i> -->
+            <img src="../../assets/context-menu-icons/select-all.svg" class="icons" />
           </div>
           <span class="set-context">
             Select
@@ -13,28 +14,33 @@
         </button>
 
         <button class="wrapper1-context">
-          <i style="font-size:15px" class="fa">&#xf0ea;</i>
+          <!-- <i style="font-size:15px" class="fa">&#xf0ea;</i> -->
+          <img src="../../assets/context-menu-icons/paste.svg" class="icons" />
           <span class="iset-context">
             <u>P</u>aste
           </span>
         </button>
-        
+
         <button class="wrapper1-context">
-         <div></div>
-         <span class="set-context"><u>D</u>elete</span>
-       </button>
-       <div>
+          <div></div>
+          <span class="set-context">
+            <u>D</u>elete
+          </span>
+        </button>
+        <div>
           <hr />
         </div>
         <button class="wrapper1-context">
-          <i style="font-size:15px" class="fa">&#xf187;</i>
+          <!-- <i style="font-size:15px" class="fa">&#xf187;</i> -->
+          <img src="../../assets/context-menu-icons/object-property.svg" class="icons" />
           <span class="iset-context">
             Prope<u>r</u>ties
           </span>
         </button>
         <button class="wrapper1-context">
           <div>
-            <i style="font-size:15px" class="fa">&#xf1ea;</i>
+            <!-- <i style="font-size:15px" class="fa">&#xf1ea;</i> -->
+            <img src="../../assets/context-menu-icons/view-code.svg" class="icons" />
           </div>
           <span class="set-context">
             View C<u>o</u>de
@@ -52,6 +58,7 @@
 </template>
 
 <script>
+// import '../../assets/context-menu-icons'
 export default {};
 </script>
 

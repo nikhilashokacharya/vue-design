@@ -1,12 +1,9 @@
 <template>
-  <div class="select-editable" style="width: 120px;
-  height: 18px;">
-        <select>
-          <option value="">Hi</option>
-          <option value="">Hello</option>
-        </select>
-        <input type="text" name="format" value="" />
-    </div>
+  <div class="select-editable" style="width: 150px;
+    height: 17px;">
+    <select></select>
+    <input type="text" name="format" value />
+  </div>
 </template>
 
 <script>
@@ -17,10 +14,6 @@ export default {};
 .select-editable {
   position: relative;
   background-color: white;
-  border: solid lightgray 0.1px;
-  box-shadow: -1px -1px grey;
-  /* width: 120px;
-  height: 18px; */
 }
 
 .select-editable select {
@@ -52,19 +45,18 @@ export default {};
 }
 
 .select-editable:before {
-  content: "";
-  position: absolute;
-  /* top: 1px; */
-  right: 0;
-  width: 20px;
-  height: -webkit-fill-available;
-  float: right;
-  border-left: 1px solid lightgray;
-  border-right: 1px solid gray;
-  border-bottom: 1px solid gray;
-  background: rgb(238, 238, 238);
+    content: "";
+    position: absolute;
+    /* top: 1px; */
+    right: 0px;
+    width: 15px;
+    height: -webkit-fill-available;
+    float: right;
+    border: 1px solid lightgrey;
+    border-right-color: gray;
+    border-bottom-color: gray;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" border="1px solid red"><polygon points="0,0 100,0 50,50" style="fill:%23666666;stroke-width:3;stroke:rgb(0,0,250)" /></svg>');
-  background-size: 40%;
+  background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
   pointer-events: none;

@@ -19,7 +19,7 @@
           <div class="toolbox-icons">
             <div class="container">
               <img
-                src="../../assets/toolbox icons/SelectIcon.png"
+                src="../../assets/toolbox-icons1/select-object.svg"
                 alt="SelectIcon"
                 class="image toolbox-icon"
               />
@@ -29,7 +29,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/Label.png"
+                src="../../assets/toolbox-icons1/label.svg"
                 alt="Label"
                 class="image toolbox-icon"
               />
@@ -39,7 +39,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/TextBox.png"
+                src="../../assets/toolbox-icons1/text-box.svg"
                 alt="TextBox"
                 class="image toolbox-icon"
               />
@@ -49,7 +49,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/ComboBox.png"
+                src="../../assets/toolbox-icons1/combo-box.svg"
                 alt="ComboBox"
                 class="image toolbox-icon"
               />
@@ -59,7 +59,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/ListBox.png"
+                src="../../assets/toolbox-icons1/list-box.svg"
                 alt="ListBox"
                 class="image toolbox-icon"
               />
@@ -69,7 +69,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/CheckBox.png"
+                src="../../assets/toolbox-icons1/check-button.svg"
                 alt="CheckBox"
                 class="image toolbox-icon"
               />
@@ -79,7 +79,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/OptionButton.png"
+                src="../../assets/toolbox-icons1/option-button.svg"
                 alt="OptionButton"
                 class="image toolbox-icon"
               />
@@ -89,7 +89,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/ToggleButton.png"
+                src="../../assets/toolbox-icons1/toggle-button.svg"
                 alt="ToggleButton"
                 class="image toolbox-icon"
               />
@@ -99,7 +99,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/Frame.png"
+                src="../../assets/toolbox-icons1/frame.svg"
                 alt="Frame"
                 class="image toolbox-icon"
               />
@@ -109,7 +109,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/CommandButton.png"
+                src="../../assets/toolbox-icons1/command-button.svg"
                 alt="CommandButton"
                 class="image toolbox-icon"
               />
@@ -119,7 +119,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/TabStrip.png"
+                src="../../assets/toolbox-icons1/multi-tab.svg"
                 alt="TabStrip"
                 class="image toolbox-icon"
               />
@@ -129,7 +129,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/MultiPage.png"
+                src="../../assets/toolbox-icons1/multi-page.svg"
                 alt="MultiPage"
                 class="image toolbox-icon"
               />
@@ -139,7 +139,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/ScrollBar.png"
+                src="../../assets/toolbox-icons1/scroll-bar.svg"
                 alt="ScrollBar"
                 class="image toolbox-icon"
               />
@@ -149,7 +149,7 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/SpinButton.png"
+                src="../../assets/toolbox-icons1/spin-button.svg"
                 alt="SpinButton"
                 class="image toolbox-icon"
               />
@@ -159,18 +159,8 @@
             </div>
             <div class="container">
               <img
-                src="../../assets/toolbox icons/Picture.png"
+                src="../../assets/toolbox-icons1/image.svg"
                 alt="Picture"
-                class="image toolbox-icon"
-              />
-              <div class="overlay">
-                <div class="text"></div>
-              </div>
-            </div>
-            <div class="container">
-              <img
-                src="../../assets/toolbox icons/RefEdit.png"
-                alt="RefEdit"
                 class="image toolbox-icon"
               />
               <div class="overlay">
@@ -242,7 +232,7 @@ export default {};
   display: grid;
   overflow: auto;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
-  grid-template-columns: repeat(auto-fill, minmax(25px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(24px, auto));
   grid-auto-rows:minmax(min-content,max-content);
   /* grid-auto-rows: minmax(5vh,5vh); */
   margin: 4px;
@@ -264,13 +254,13 @@ img.toolbox-icon:hover {
 }
 .container {
   position: relative;
-  width: 24px;
+  width: 18px;
 }
 
 .image {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 17px;
+  height: 17px;
 }
 
 .overlay {
@@ -279,8 +269,8 @@ img.toolbox-icon:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 24px;
-  width: 24px;
+  height: 18px;
+  width: 18px;
   opacity: 0;
   transition: 0.5s ease;
   background-color: rgb(8, 130, 211);

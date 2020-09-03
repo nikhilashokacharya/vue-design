@@ -3,19 +3,22 @@
     <div class="outercontext-div">
       <div class="wrapper-context">
         <button class="wrapper1-context">
-          <i style="font-size:15px" class="fa">&#xf0c4;</i>
+          <!-- <i style="font-size:15px" class="fa">&#xf0c4;</i> -->
+          <img src="../../assets/context-menu-icons/cut.svg" class="icons" />
           <span class="iset-context">
             Cu<u>t</u>
           </span>
         </button>
         <button class="wrapper1-context">
-          <i style="font-size:15px" class="fa">&#xf0c5;</i>
+          <!-- <i style="font-size:15px" class="fa">&#xf0c5;</i> -->
+          <img src="../../assets/context-menu-icons/copy.svg" class="icons" />
           <span class="iset-context">
             <u>C</u>opy
           </span>
         </button>
         <button class="wrapper1-context">
-          <i style="font-size:15px;" class="fa">&#xf0ea;</i>
+          <!-- <i style="font-size:15px;" class="fa">&#xf0ea;</i> -->
+          <img src="../../assets/context-menu-icons/paste.svg" class="icons" />
           <span class="iset-context">
             <u>P</u>aste
           </span>
@@ -30,14 +33,16 @@
           <hr />
         </div>
         <button class="wrapper1-context">
-          <i style="font-size:15px" class="fa">&#xf187;</i>
+          <!-- <i style="font-size:15px" class="fa">&#xf187;</i> -->
+          <img src="../../assets/context-menu-icons/object-property.svg" class="icons" />
           <span class="iset-context">
             Prope<u>r</u>ties
           </span>
         </button>
         <button class="wrapper1-context">
           <div>
-            <i style="font-size:15px" class="fa">&#xf1ea;</i>
+            <!-- <i style="font-size:15px" class="fa">&#xf1ea;</i> -->
+            <img src="../../assets/context-menu-icons/view-code.svg" class="icons" />
           </div>
           <span class="set-context">
             View C<u>o</u>de
@@ -56,7 +61,8 @@
               <ul class="third-level-menu">
                 <li class="wrapper1-context">
                   <div>
-                    <i style="font-size:13px" class="fa third">&#xf036;</i>
+                    <!-- <i style="font-size:13px" class="fa third">&#xf036;</i> -->
+                    <img src="../../assets/context-menu-icons/align-left.svg" class="icons" />
                   </div>
                   <a href="#">
                     <u>L</u>efts
@@ -64,7 +70,8 @@
                 </li>
                 <li class="wrapper1-context">
                   <div>
-                    <i style="font-size:13px" class="fa third">&#xf037;</i>
+                    <!-- <i style="font-size:13px" class="fa third">&#xf037;</i> -->
+                    <img src="../../assets/context-menu-icons/align-center.svg" class="icons" />
                   </div>
                   <a href="#">
                     <u>C</u>enters
@@ -72,7 +79,8 @@
                 </li>
                 <li class="wrapper1-context">
                   <div>
-                    <i style="font-size:13px" class="fa third">&#xf038;</i>
+                    <!-- <i style="font-size:13px" class="fa third">&#xf038;</i> -->
+                    <img src="../../assets/context-menu-icons/align-right.svg" class="icons" />
                   </div>
                   <a href="#">
                     <u>R</u>ights
@@ -81,7 +89,8 @@
                 <hr />
                 <li class="wrapper1-context">
                   <div>
-                    <i style="font-size:13px" class="fa third">&#xf161;</i>
+                    <!-- <i style="font-size:13px" class="fa third">&#xf161;</i> -->
+                    <img src="../../assets/context-menu-icons/align-top.svg" class="icons" />
                   </div>
                   <a href="#">
                     <u>T</u>ops
@@ -89,7 +98,8 @@
                 </li>
                 <li class="wrapper1-context">
                   <div>
-                    <i style="font-size:13px" class="fa third">&#xf039;</i>
+                    <!-- <i style="font-size:13px" class="fa third">&#xf039;</i> -->
+                    <img src="../../assets/context-menu-icons/align-middle.svg" class="icons" />
                   </div>
                   <a href="#">
                     <u>M</u>iddles
@@ -97,7 +107,8 @@
                 </li>
                 <li class="wrapper1-context">
                   <div>
-                    <i style="font-size:13px" class="fa third">&#xf160;</i>
+                    <!-- <i style="font-size:13px" class="fa third">&#xf160;</i> -->
+                    <img src="../../assets/context-menu-icons/align-bottom.svg" class="icons" />
                   </div>
                   <a href="#">
                     <u>B</u>ottoms
@@ -106,7 +117,8 @@
                 <hr />
                 <li class="wrapper1-context">
                   <div>
-                    <i style="font-size:13px" class="fa third">&#xf00a;</i>
+                    <!-- <i style="font-size:13px" class="fa third">&#xf00a;</i> -->
+                    <img src="../../assets/context-menu-icons/align-grid.svg" class="icons" />
                   </div>
                   <a href="#" style="padding-left:15px;">
                     To<u>G</u>rids
@@ -127,7 +139,7 @@
               <ul class="third-level-menu">
                 <li class="wrapper1-context">
                   <div>
-                    <i style="font-size:13px" class="fa third">&#xf035;</i>
+                    <img src="../../assets/context-menu-icons/size-width.svg" class="icons" />
                   </div>
                   <a href="#">
                     <u>W</u>idth
@@ -135,7 +147,7 @@
                 </li>
                 <li class="wrapper1-context">
                   <div>
-                    <i style="font-size:13px" class="fa third">&#xf034;</i>
+                    <img src="../../assets/context-menu-icons/size-height.svg" class="icons" />
                   </div>
                   <a href="#">
                     <u>H</u>eight
@@ -143,7 +155,7 @@
                 </li>
                 <li class="wrapper1-context">
                   <div>
-                    <i style="font-size:13px" class="fa third">&#xf047;</i>
+                    <img src="../../assets/context-menu-icons/size-both.svg" class="icons" />
                   </div>
                   <a href="#">
                     <u>B</u>oth
@@ -159,7 +171,8 @@
         </div>
         <button class="wrapper1-context">
           <div>
-            <i style="font-size:15px" class="fa">&#xf247;</i>
+            <!-- <i style="font-size:15px" class="fa">&#xf247;</i> -->
+            <img src="../../assets/context-menu-icons/group.svg" class="icons" />
           </div>
           <span class="set-context">
             <u>G</u>roup
@@ -167,15 +180,17 @@
         </button>
         <button class="wrapper1-context">
           <div>
-            <i style="font-size:15px" class="fa">&#xf0c5;</i>
+            <!-- <i style="font-size:15px" class="fa">&#xf0c5;</i> -->
+            <img src="../../assets/context-menu-icons/control-forward.svg" class="icons" />
           </div>
           <span class="set-context">
-            Bring<u>F</u>orward
+            Bring <u>F</u>orward
           </span>
         </button>
         <button class="wrapper1-context">
           <div>
-            <i style="font-size:15px" class="fa">&#xf0c5;</i>
+            <!-- <i style="font-size:15px" class="fa">&#xf0c5;</i> -->
+            <img src="../../assets/context-menu-icons/control-backward.svg" class="icons" />
           </div>
           <span class="set-context">
             Send Back<u>w</u>ard
@@ -349,5 +364,8 @@ ul {
 }
 .third > a {
   padding-left: 10px;
+}
+.icons{
+  margin-left: 3px;
 }
 </style>

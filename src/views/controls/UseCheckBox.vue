@@ -1,15 +1,23 @@
 <template>
   <div class="outer-check">
     <label class="control">
-      <input type="checkbox" class="control-input visually-hidden" />
+      <input type="checkbox" @change="handleChange" class="control-input visually-hidden" />
       <span class="control-indicator"></span>
       <span style="font-size: 12px;">CheckBox1</span>
     </label>
   </div>
 </template>
 
-<script>
-export default {};
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+@Component({
+  components: {},
+})
+export default class UseCheckBox extends Vue {
+  handleChange(e: any){
+    console.log(e.target.checked);
+  }
+}
 </script>
 
 <style scoped>

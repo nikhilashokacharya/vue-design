@@ -18,15 +18,15 @@
     <div class="wrapper">
       <span>Caption:</span>
       <div>
-        <input type="text" v-model="renameValue" @change="handleRename"/>
+        <input type="text" @change="handleRename" :value="renameValue | acceleratorFilter"/>
       </div>
       <span>Accelerator Key:</span>
       <div>
-        <input type="text" style="width:10%" />
+        <input type="text" style="width:10%" @input="accCheck"/>
       </div>
       <span>Control Tip Text:</span>
       <div>
-        <input type="text" @input="handleTip"/>
+        <input type="text" @change="handleTip"/>
       </div>
       <div></div>
       <div>
@@ -52,10 +52,23 @@
 import { EventBus } from "../../components/event-bus"
 import { Component, Vue } from "vue-property-decorator";
 @Component({
+   filters: {
+    acceleratorFilter(value: any) {
+        const filteredValue = value;
+        if(filteredValue!==null){
+        if(filteredValue.includes("&#818;")){
+        const newVal = filteredValue.replace(/&#818;/g,"");
+        console.log('filter',newVal);
+        return newVal;
+        }
+      }
+      return value;
+    }
+  },
   components: {},
 })
 export default class RenameMultiPageDialog extends Vue {
-    renameValue=""
+    renameValue=null
     isOpen=false
     tempRename=null
     openDialog(){
@@ -72,6 +85,7 @@ export default class RenameMultiPageDialog extends Vue {
     });
     EventBus.$on("renameTabs", (data: any)=>{
       this.renameValue=data.tabLabel;
+      this.tempRename=this.renameValue;
     });
     }
     
@@ -90,6 +104,24 @@ export default class RenameMultiPageDialog extends Vue {
     }
     closemecancel(){
       this.isOpen=false;
+    }
+    accCheck(e: any){
+      debugger
+      console.log('acc',e.target.value[0]);
+      const underline = "&#818;";
+      const tab=this.tempRename;
+      const replaceUnderline = tab.replace(/&#818;/g,"");
+      const pos = replaceUnderline.indexOf(e.target.value[0]);
+     
+     if(pos!==-1){
+        const acctab =replaceUnderline.substring(0, pos) + replaceUnderline[pos] + underline + replaceUnderline.substring(pos + 1, replaceUnderline.length);
+      this.tempRename=acctab;
+      } else {
+        this.tempRename=replaceUnderline;
+        // return false;
+      }
+      
+       
     }
 }
 </script>

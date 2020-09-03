@@ -27,10 +27,10 @@
               v-for="value in tabOrderArray"
               :key="value.key"
               @click="selectedTab(value)"
-            >{{value.tabLabel}}</button>
-               <!-- :class="{'active-item': currentControl.index === value.index}"  -->
+            >{{value.tabLabel | acceleratorFilter}}</button>
+              
+               <!-- :class="{'active-item': currentControl.index === value.index}"   -->
 
-            
           </div>
         </div>
         <div class="wrapper2">
@@ -54,6 +54,19 @@
 import { EventBus } from "../../components/event-bus";
 import { Component, Vue } from "vue-property-decorator";
 @Component({
+  filters: {
+    acceleratorFilter(value: any) {
+        const filteredValue = value;
+        if(filteredValue!==null){
+        if(filteredValue.includes("&#818;")){
+        const newVal = filteredValue.replace(/&#818;/g,"");
+        console.log('filter',newVal);
+        return newVal;
+        }
+      }
+      return value;
+    }
+  },
   components: {},
 })
 export default class TabStripTabOrderModal extends Vue {
@@ -62,7 +75,7 @@ export default class TabStripTabOrderModal extends Vue {
     this.isOpen = true;
   }
   closeme(){
-        this.isOpen = false;
+  this.isOpen = false;
   }
   closemeok() {
     EventBus.$emit("Okayed",this.tabOrderArray);
@@ -71,7 +84,7 @@ export default class TabStripTabOrderModal extends Vue {
   closemecancel(){
     this.isOpen = false;
   }
-  tabOrderArray = [];
+  tabOrderArray: any= [];
   currentControl: any = {};
   mounted() {
     this.tabOrderArray=[];
@@ -87,9 +100,10 @@ export default class TabStripTabOrderModal extends Vue {
       this.isOpen=true;
       // console.log('Inside Mounted')
     });
+    this.sortObject(this.tabOrderArray);
   }
   created() {
-    this.sortObject(this.tabOrderArray);
+    // this.sortObject(this.tabOrderArray);
   }
   selectedTab(data: any) {
     console.log(data);
@@ -98,7 +112,6 @@ export default class TabStripTabOrderModal extends Vue {
   sortObject(obj: any) {
     this.tabOrderArray = obj;
     let arr = [];
-
     arr = this.tabOrderArray;
 
     arr.sort(function (a, b) {
@@ -106,6 +119,7 @@ export default class TabStripTabOrderModal extends Vue {
     });
     this.tabOrderArray = arr;
     this.currentControl = this.tabOrderArray[0];
+    // console.log(this.tabOrderArray);
   }
   moveControlUp() {
     // debugger;
@@ -119,7 +133,7 @@ export default class TabStripTabOrderModal extends Vue {
       this.sortObject(this.tabOrderArray);
       this.currentControl = this.tabOrderArray[i - 1];
     }
-    console.log('UPped',this.tabOrderArray);
+    console.log('UPped',this.currentControl.index);
   }
 
   moveControlDown() {
