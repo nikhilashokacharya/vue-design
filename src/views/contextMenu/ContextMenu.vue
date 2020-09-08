@@ -14,6 +14,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { userformContextMenu } from "./models/userform";
+import { controlContextMenu } from './models/controls'
 import FDSVGImage from "../../components/FDSVGImage.vue";
 @Component({
   components: {
@@ -21,7 +22,8 @@ import FDSVGImage from "../../components/FDSVGImage.vue";
   },
 })
 export default class ContextMenu extends Vue {
-  values: any = userformContextMenu;
+  // values: any = userformContextMenu;
+  values: any = controlContextMenu;
   mounted() {
     console.log("CMENU", userformContextMenu);
   }
