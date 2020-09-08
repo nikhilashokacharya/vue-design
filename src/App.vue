@@ -71,7 +71,7 @@
     <!-- <UseComboBox /> -->
     <ContextMenu />
     <hr />
-    <CustomInput name="(Name)" info="UserForm" inputType="text"/>
+    <!-- <CustomInput name="(Name)" info="UserForm" inputType="text"/>
     <CustomColorTabs name="BackColor" />
     <CustomColorTabs name="BorderColor" />
     <CustomInput name="Caption" info="Caption Value" inputType="text"/>
@@ -86,12 +86,12 @@
     <CustomInput name="Tag" info="" inputType="text"/>
     <CustomInput name="Top" info="0" inputType="number"/>
     <CustomInput name="Width" info="541" inputType="number"/>
-    <CustomInput name="Zoom" info="100" inputType="number"/>
+    <CustomInput name="Zoom" info="100" inputType="number"/> -->
 
     <!-- <hr />
     <UseComboBox />-->
-    <hr />
-     <UseCheckBox />
+    <!-- <hr />
+     <UseCheckBox /> -->
     <div style="margin-bottom:100px"></div>
   </div>
 </template>
