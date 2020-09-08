@@ -1,23 +1,20 @@
 <template>
   <div>
-    <div class="outercontext-div">
+    <!-- <div class="outercontext-div">
       <div class="wrapper-context">
         <button class="wrapper1-context">
-          <!-- <i style="font-size:15px" class="fa">&#xf0c4;</i> -->
           <img src="../../assets/context-menu-icons/cut.svg" class="icons" />
           <span class="iset-context">
             Cu<u>t</u>
           </span>
         </button>
         <button class="wrapper1-context">
-          <!-- <i style="font-size:15px" class="fa">&#xf0c5;</i> -->
           <img src="../../assets/context-menu-icons/copy.svg" class="icons" />
           <span class="iset-context">
             <u>C</u>opy
           </span>
         </button>
         <button class="wrapper1-context">
-          <!-- <i style="font-size:15px;" class="fa">&#xf0ea;</i> -->
           <img src="../../assets/context-menu-icons/paste.svg" class="icons" />
           <span class="iset-context">
             <u>P</u>aste
@@ -33,7 +30,6 @@
           <hr />
         </div>
         <button class="wrapper1-context">
-          <!-- <i style="font-size:15px" class="fa">&#xf187;</i> -->
           <img src="../../assets/context-menu-icons/object-property.svg" class="icons" />
           <span class="iset-context">
             Prope<u>r</u>ties
@@ -41,7 +37,6 @@
         </button>
         <button class="wrapper1-context">
           <div>
-            <!-- <i style="font-size:15px" class="fa">&#xf1ea;</i> -->
             <img src="../../assets/context-menu-icons/view-code.svg" class="icons" />
           </div>
           <span class="set-context">
@@ -61,7 +56,6 @@
               <ul class="third-level-menu">
                 <li class="wrapper1-context">
                   <div>
-                    <!-- <i style="font-size:13px" class="fa third">&#xf036;</i> -->
                     <img src="../../assets/context-menu-icons/align-left.svg" class="icons" />
                   </div>
                   <a href="#">
@@ -70,7 +64,6 @@
                 </li>
                 <li class="wrapper1-context">
                   <div>
-                    <!-- <i style="font-size:13px" class="fa third">&#xf037;</i> -->
                     <img src="../../assets/context-menu-icons/align-center.svg" class="icons" />
                   </div>
                   <a href="#">
@@ -79,7 +72,6 @@
                 </li>
                 <li class="wrapper1-context">
                   <div>
-                    <!-- <i style="font-size:13px" class="fa third">&#xf038;</i> -->
                     <img src="../../assets/context-menu-icons/align-right.svg" class="icons" />
                   </div>
                   <a href="#">
@@ -89,7 +81,6 @@
                 <hr />
                 <li class="wrapper1-context">
                   <div>
-                    <!-- <i style="font-size:13px" class="fa third">&#xf161;</i> -->
                     <img src="../../assets/context-menu-icons/align-top.svg" class="icons" />
                   </div>
                   <a href="#">
@@ -98,7 +89,6 @@
                 </li>
                 <li class="wrapper1-context">
                   <div>
-                    <!-- <i style="font-size:13px" class="fa third">&#xf039;</i> -->
                     <img src="../../assets/context-menu-icons/align-middle.svg" class="icons" />
                   </div>
                   <a href="#">
@@ -107,7 +97,6 @@
                 </li>
                 <li class="wrapper1-context">
                   <div>
-                    <!-- <i style="font-size:13px" class="fa third">&#xf160;</i> -->
                     <img src="../../assets/context-menu-icons/align-bottom.svg" class="icons" />
                   </div>
                   <a href="#">
@@ -117,7 +106,6 @@
                 <hr />
                 <li class="wrapper1-context">
                   <div>
-                    <!-- <i style="font-size:13px" class="fa third">&#xf00a;</i> -->
                     <img src="../../assets/context-menu-icons/align-grid.svg" class="icons" />
                   </div>
                   <a href="#" style="padding-left:15px;">
@@ -171,7 +159,6 @@
         </div>
         <button class="wrapper1-context">
           <div>
-            <!-- <i style="font-size:15px" class="fa">&#xf247;</i> -->
             <img src="../../assets/context-menu-icons/group.svg" class="icons" />
           </div>
           <span class="set-context">
@@ -180,7 +167,6 @@
         </button>
         <button class="wrapper1-context">
           <div>
-            <!-- <i style="font-size:15px" class="fa">&#xf0c5;</i> -->
             <img src="../../assets/context-menu-icons/control-forward.svg" class="icons" />
           </div>
           <span class="set-context">
@@ -189,7 +175,6 @@
         </button>
         <button class="wrapper1-context">
           <div>
-            <!-- <i style="font-size:15px" class="fa">&#xf0c5;</i> -->
             <img src="../../assets/context-menu-icons/control-backward.svg" class="icons" />
           </div>
           <span class="set-context">
@@ -197,7 +182,7 @@
           </span>
         </button>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

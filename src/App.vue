@@ -2,9 +2,9 @@
   <div id="app">
     <!-- <testControlContextMenu2 />
     <hr>-->
-    <testTab />
+    <!-- <testTab /> -->
     <!-- <hr> -->
-    <RenameMultiPageDialog />
+    <!-- <RenameMultiPageDialog /> -->
     <!-- <hr> -->
     <!-- 
     <testPage />
@@ -62,13 +62,14 @@
     <!-- <hr>
     <Pop-up-tutorial />-->
     <!-- <FontDialog /> -->
-    <TabStripContextMenu />
+    <!-- <TabStripContextMenu />
     <TabStripTabOrderModal />
     <hr />
     <ControlContextMenu />
     <hr /> 
-    <UserformContextMenu />
+    <UserformContextMenu /> -->
     <!-- <UseComboBox /> -->
+    <ContextMenu />
     <hr />
     <CustomInput name="(Name)" info="UserForm" inputType="text"/>
     <CustomColorTabs name="BackColor" />
@@ -134,7 +135,7 @@ import CustomInput from "../src/views/table/CustomInput.vue";
 import CustomColorTabs from "../src/views/table/CustomColorTabs.vue";
 import CustomFontDialog from "../src/views/table/CustomFontDialog.vue";
 import CustomDropDown from "../src/views/table/CustomDropDown.vue";
-
+import ContextMenu from "../src/views/contextMenu/ContextMenu.vue"
 @Component({
   components: {
     testTab,
@@ -174,6 +175,7 @@ import CustomDropDown from "../src/views/table/CustomDropDown.vue";
     CustomColorTabs,
     CustomFontDialog,
     CustomDropDown,
+    ContextMenu
   },
 })
 export default class App extends Vue {}

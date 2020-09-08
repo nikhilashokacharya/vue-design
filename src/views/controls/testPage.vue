@@ -5,7 +5,7 @@
         <div class="page" v-for="(value,key) in values" :key="key" >
           <input name="page-group-1" :id="value.id" type="radio" ref="check1"/>
           <label :for="value.id">{{value.tabLabel}}</label>
-          <div class="content"><UseLabel v-if="value.tabContent==='Label'"/><UseToggleButton v-if="value.tabContent==='ToggleButton'"/><UseOptionButton v-if="value.tabContent==='OptionButton'"/></div>
+          <div class="content"></div>
         </div>
       </div>
       <div></div>

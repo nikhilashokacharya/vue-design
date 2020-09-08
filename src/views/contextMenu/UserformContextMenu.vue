@@ -1,10 +1,8 @@
 <template>
-  <div>
     <div class="outercontext-div">
-      <div class="wrapper-context">
+      <!-- <div class="wrapper-context">
         <button class="wrapper1-context">
           <div>
-            <!-- <i style="font-size:15px" class="fa">&#xf07b;</i> -->
             <img src="../../assets/context-menu-icons/select-all.svg" class="icons" />
           </div>
           <span class="set-context">
@@ -14,7 +12,6 @@
         </button>
 
         <button class="wrapper1-context">
-          <!-- <i style="font-size:15px" class="fa">&#xf0ea;</i> -->
           <img src="../../assets/context-menu-icons/paste.svg" class="icons" />
           <span class="iset-context">
             <u>P</u>aste
@@ -31,7 +28,6 @@
           <hr />
         </div>
         <button class="wrapper1-context">
-          <!-- <i style="font-size:15px" class="fa">&#xf187;</i> -->
           <img src="../../assets/context-menu-icons/object-property.svg" class="icons" />
           <span class="iset-context">
             Prope<u>r</u>ties
@@ -39,7 +35,6 @@
         </button>
         <button class="wrapper1-context">
           <div>
-            <!-- <i style="font-size:15px" class="fa">&#xf1ea;</i> -->
             <img src="../../assets/context-menu-icons/view-code.svg" class="icons" />
           </div>
           <span class="set-context">
@@ -52,9 +47,8 @@
             T<u>a</u>b Order
           </span>
         </button>
-      </div>
+      </div> -->
     </div>
-  </div>
 </template>
 
 <script>
@@ -69,12 +63,10 @@ export default {};
   width: 150px;
   height: auto;
   font-size: 13px;
-  /* margin-left: 300px; */
 }
 .wrapper-context {
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-row-gap: 4px; */
   width: 100%;
   height: 100%;
 }
